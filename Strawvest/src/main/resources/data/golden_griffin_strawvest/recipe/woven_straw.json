@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ST ",
+    "TS "
+  ],
+  "key": {
+  "S": "#golden_griffin_strawvest:wheat_straw",
+  "T": "golden_griffin_strawvest:straw_twine"},
+  "result": {
+    "id": "golden_griffin_strawvest:woven_straw",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\resources",
+    "\\src\\main\\resources\\assets",
+    "\\src\\main\\resources\\assets\\golden_griffin_strawvest",
+    "\\src\\main\\resources\\assets\\golden_griffin_strawvest\\textures",
+    "\\src\\main\\resources\\data",
+    "\\src\\main\\resources\\data\\golden_griffin_strawvest",
+    "\\src\\main\\resources\\data\\golden_griffin_strawvest\\loot_table"
+  ],
+  "SelectedNode": "\\src\\main\\resources\\assets\\golden_griffin_strawvest\\models\\item\\straw_twine.json",
+  "PreviewInSolutionExplorer": false
+}

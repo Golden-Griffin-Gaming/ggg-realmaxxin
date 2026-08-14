@@ -1,0 +1,27 @@
+# Operating-system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.iml
+
+# Java and Gradle generated files
+.gradle/
+**/build/
+**/out/
+**/run/
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+~$*
+
+# Visual Studio generated files
+.vs/
+*.suo
+*.user

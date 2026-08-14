@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "golden_griffin_strawvest",
+	"version": "${version}",
+	"name": "Agricrafture: Strawvest",
+	"description": "Expands wheat harvesting with Wheat Straw, realistic bale storage, half-bale stacking, and placeable sacks of wheat.",
+"authors": [
+  "Golden Griffin Gaming"
+],
+"contact": {
+  "homepage": "https://goldengriffingaming.ca",
+  "itch.io": "https://ggg-minecraft.itch.io/"
+},
+	"license": "CC0-1.0",
+	"icon": "assets/golden_griffin_strawvest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ca.goldengriffingaming.strawvest.GoldenGriffinStrawvest"
+		],
+		"client": [
+			"ca.goldengriffingaming.strawvest.client.GoldenGriffinStrawvestClient"
+		]
+	},
+	
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "golden_griffin_strawvest:block/thatch_block"
+    },
+    "facing=east": {
+      "model": "golden_griffin_strawvest:block/thatch_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "golden_griffin_strawvest:block/thatch_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "golden_griffin_strawvest:block/thatch_block",
+      "y": 270
+    }
+  }
+}

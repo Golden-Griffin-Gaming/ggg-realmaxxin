@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SKS",
+    "SLS",
+    "SKS"
+  ],
+  "key": {
+    "S": "#golden_griffin_strawvest:wheat_straw",
+    "K": "minecraft:stick",
+    "L": "#minecraft:logs"
+  },
+  "result": {
+    "id": "golden_griffin_strawvest:thatch_block",
+    "count": 4
+  }
+}

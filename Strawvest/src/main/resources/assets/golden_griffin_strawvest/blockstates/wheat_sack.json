@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "golden_griffin_strawvest:block/wheat_sack"
+    },
+    "facing=east": {
+      "model": "golden_griffin_strawvest:block/wheat_sack",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "golden_griffin_strawvest:block/wheat_sack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "golden_griffin_strawvest:block/wheat_sack",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "golden_griffin_strawvest:block/straw_bedding"
+      },
+      {
+        "model": "golden_griffin_strawvest:block/straw_bedding",
+        "y": 90
+      },
+      {
+        "model": "golden_griffin_strawvest:block/straw_bedding",
+        "y": 180
+      },
+      {
+        "model": "golden_griffin_strawvest:block/straw_bedding",
+        "y": 270
+      }
+    ]
+  }
+}

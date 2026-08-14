@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "golden_griffin_strawvest:straw",
+    {
+      "id": "farmersdelight:straw",
+      "required": false
+    }
+  ]
+}

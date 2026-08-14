@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": "minecraft:wheat"
+  },
+  "result": {
+    "id": "golden_griffin_strawvest:wheat_sack",
+    "count": 1
+  }
+}

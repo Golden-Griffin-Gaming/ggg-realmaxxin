@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "T  ",
+    "TT "
+  ],
+  "key": {
+    "T": "golden_griffin_strawvest:thatch_block"
+  },
+  "result": {
+    "id": "golden_griffin_strawvest:thatch_stairs",
+    "count": 4
+  }
+}

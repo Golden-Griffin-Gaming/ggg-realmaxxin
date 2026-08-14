@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "golden_griffin_strawvest:wheat_sack"
+  ],
+  "result": {
+    "id": "minecraft:wheat",
+    "count": 9
+  }
+}

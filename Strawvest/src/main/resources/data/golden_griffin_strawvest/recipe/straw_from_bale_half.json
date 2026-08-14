@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "golden_griffin_strawvest:straw_bale_half"
+  ],
+  "result": {
+    "id": "golden_griffin_strawvest:straw",
+    "count": 5
+  }
+}

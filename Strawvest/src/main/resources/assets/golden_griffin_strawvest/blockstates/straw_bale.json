@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "golden_griffin_strawvest:block/straw_bale"
+    },
+    "axis=x": {
+      "model": "golden_griffin_strawvest:block/straw_bale",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "golden_griffin_strawvest:block/straw_bale",
+      "x": 90
+    }
+  }
+}
