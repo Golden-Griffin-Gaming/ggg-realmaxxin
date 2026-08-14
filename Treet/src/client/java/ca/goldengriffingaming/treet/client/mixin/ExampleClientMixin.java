@@ -1,4 +1,4 @@
-package ca.goldengriffingaming.ggg-treet.client.mixin;
+package ca.goldengriffingaming.treet.client.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

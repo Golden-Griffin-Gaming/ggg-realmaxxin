@@ -1,4 +1,4 @@
-package ca.goldengriffingaming.ggg-treet.client;
+package ca.goldengriffingaming.treet.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

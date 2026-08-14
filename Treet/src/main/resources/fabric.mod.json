@@ -16,16 +16,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"ca.goldengriffingaming.ggg-treet.GggTreet"
+			"ca.goldengriffingaming.treet.GggTreet"
 		],
 		"client": [
-			"ca.goldengriffingaming.ggg-treet.client.GggTreetClient"
+			"ca.goldengriffingaming.treet.client.GggTreetClient"
 		]
 	},
 	"mixins": [
-		"ggg-treet.mixins.json",
+		"treet.mixins.json",
 		{
-			"config": "ggg-treet.client.mixins.json",
+			"config": "treet.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "ca.goldengriffingaming.ggg-treet.client.mixin",
+	"package": "ca.goldengriffingaming.treet.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
 		"ExampleClientMixin"

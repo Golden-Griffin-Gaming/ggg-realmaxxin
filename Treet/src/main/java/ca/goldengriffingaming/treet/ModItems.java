@@ -1,4 +1,4 @@
-package ca.goldengriffingaming.ggg-treet;
+package ca.goldengriffingaming.treet;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.loader.api.FabricLoader;
@@ -35,7 +35,7 @@ public class ModItems {
         ResourceKey<Item> itemKey = ResourceKey.create(
                 Registries.ITEM,
                 Identifier.fromNamespaceAndPath(
-                        ggg-treet.MOD_ID,
+                        GggTreet.MOD_ID,
                         name
                 )
         );
