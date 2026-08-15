@@ -26,6 +26,18 @@ public class ModItems {
             new Item.Properties()
     );
 
+        public static final Item FIR_SEEDS = register(
+            "fir_seeds",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final Item FIR_CONE = register(
+            "fir_cone",
+            Item::new,
+            new Item.Properties()
+    );
+
     
     public static <T extends Item> T register(
             String name,

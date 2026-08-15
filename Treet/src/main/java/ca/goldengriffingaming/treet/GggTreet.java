@@ -34,6 +34,16 @@ public class GggTreet implements ModInitializer {
                 )
         );
 
+	private static final ResourceKey<LootTable> FIR_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/fir_leaves"
+                )
+        );
+
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -51,6 +61,15 @@ public class GggTreet implements ModInitializer {
                 .add(LootItem.lootTableItem(ModItems.MAHOGANY_SEED_POD));
 
         tableBuilder.withPool(podPool);
+    }
+    if (FIR_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder conePool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.FIR_CONE));
+
+        tableBuilder.withPool(conePool);
     }
 });
 
