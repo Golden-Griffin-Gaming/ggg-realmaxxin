@@ -6,6 +6,10 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
+base {
+    archivesName = "ggg-treet"
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -18,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"64times" {
+		"ggg-treet" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

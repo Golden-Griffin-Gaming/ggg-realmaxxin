@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "ggg-treet:item/mahogany_seed_pod"
+	}
+}
