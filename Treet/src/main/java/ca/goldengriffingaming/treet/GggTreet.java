@@ -45,17 +45,11 @@ public class GggTreet implements ModInitializer {
 	LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
     if (MAHOGANY_LEAVES_LOOT_TABLE.equals(key)) {
 
-        LootPool.Builder seedPool = LootPool.lootPool()
-                .setRolls(ConstantValue.exactly(1.0F))
-                .when(LootItemRandomChanceCondition.randomChance(0.05F))
-                .add(LootItem.lootTableItem(ModItems.MAHOGANY_SEEDS));
-
         LootPool.Builder podPool = LootPool.lootPool()
                 .setRolls(ConstantValue.exactly(1.0F))
                 .when(LootItemRandomChanceCondition.randomChance(0.02F))
                 .add(LootItem.lootTableItem(ModItems.MAHOGANY_SEED_POD));
 
-        tableBuilder.withPool(seedPool);
         tableBuilder.withPool(podPool);
     }
 });
