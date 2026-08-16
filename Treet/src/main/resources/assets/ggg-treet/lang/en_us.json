@@ -2,5 +2,10 @@
   "item.ggg-treet.mahogany_seeds": "Mahogany Seeds",
   "item.ggg-treet.mahogany_seed_pod": "Mahogany Seed Pod",
   "item.ggg-treet.fir_seeds": "Fir Seeds",
-  "item.ggg-treet.fir_cone": "Fir Cone"
+  "item.ggg-treet.fir_cone": "Fir Cone",
+  "block.ggg-treet.cypress_log": "Cypress Log",
+  "block.ggg-treet.stripped_cypress_log": "Stripped Cypress Log",
+  "block.ggg-treet.cypress_wood": "Cypress Wood",
+  "block.ggg-treet.stripped_cypress_wood": "Stripped Cypress Wood",
+  "block.ggg-treet.cypress_planks": "Cypress Planks"
 }

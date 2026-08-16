@@ -51,6 +51,7 @@ public class GggTreet implements ModInitializer {
 		// Proceed with mild caution.
 
 	ModItems.initialize();
+    ModBlocks.initialize();
 
 	LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
     if (MAHOGANY_LEAVES_LOOT_TABLE.equals(key)) {
