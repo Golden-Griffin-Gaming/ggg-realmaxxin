@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "#ggg-treet:cypress_logs"
+  ],
+  "result": {
+    "id": "ggg-treet:cypress_planks",
+    "count": 4
+  }
+}

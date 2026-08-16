@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ggg-treet:cypress_log",
+    "ggg-treet:stripped_cypress_log",
+    "ggg-treet:cypress_wood",
+    "ggg-treet:stripped_cypress_wood",
+    "ggg-treet:cypress_planks"
+  ]
+}

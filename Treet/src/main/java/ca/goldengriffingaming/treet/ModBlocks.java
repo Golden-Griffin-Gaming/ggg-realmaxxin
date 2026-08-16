@@ -1,7 +1,7 @@
 package ca.goldengriffingaming.treet;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
-
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -104,14 +104,17 @@ public class ModBlocks {
     }
 
     public static void initialize() {
-        CreativeModeTabEvents
-                .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
-                .register(entries -> {
-                    entries.accept(CYPRESS_LOG.asItem());
-                    entries.accept(STRIPPED_CYPRESS_LOG.asItem());
-                    entries.accept(CYPRESS_WOOD.asItem());
-                    entries.accept(STRIPPED_CYPRESS_WOOD.asItem());
-                    entries.accept(CYPRESS_PLANKS.asItem());
-                });
+
+        StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
+        StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
+            CreativeModeTabEvents
+                    .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
+                    .register(entries -> {
+                        entries.accept(CYPRESS_LOG.asItem());
+                        entries.accept(STRIPPED_CYPRESS_LOG.asItem());
+                        entries.accept(CYPRESS_WOOD.asItem());
+                        entries.accept(STRIPPED_CYPRESS_WOOD.asItem());
+                        entries.accept(CYPRESS_PLANKS.asItem());
+                     });
     }
 }
