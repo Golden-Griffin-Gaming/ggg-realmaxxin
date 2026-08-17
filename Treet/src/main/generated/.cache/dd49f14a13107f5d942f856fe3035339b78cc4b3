@@ -1,7 +1,13 @@
 // 26.1.2	-999999999-01-01T00:00:00	Treet/Treet Model Provider
 7fdeeecfa78f5b4d09255beba1b4f45be6c9400c assets/ggg-treet/blockstates/cypress_door.json
+38b102588f044c359dccc8026517dc8865b02d49 assets/ggg-treet/blockstates/cypress_hanging_sign.json
+ce17d5da129e180540992eb4b41847b5d48e4af1 assets/ggg-treet/blockstates/cypress_sign.json
 2aa8dcb64305454e1c45cdbf4042bf8d3f174d6b assets/ggg-treet/blockstates/cypress_trapdoor.json
+9c547cbe6e954c824b56b2b1c694e2897ee9bd3c assets/ggg-treet/blockstates/cypress_wall_hanging_sign.json
+a382be1b9029bb42965fb6d4d080a132771e2b2e assets/ggg-treet/blockstates/cypress_wall_sign.json
 73d68e64e37994a43743baff482053853ea048a1 assets/ggg-treet/items/cypress_door.json
+87a0fd7569fe6e65f4bfae9af6a6b0e0328dca86 assets/ggg-treet/items/cypress_hanging_sign.json
+dc1e549f3e685b42ae6191d2c89e6956d941386f assets/ggg-treet/items/cypress_sign.json
 8e05c53fe254bfaa3a153215984e4b9747a349d8 assets/ggg-treet/items/cypress_trapdoor.json
 fcb6f28cd71c257cb5498989cebaa51a618a2077 assets/ggg-treet/models/block/cypress_door_bottom_left.json
 3d726af880614bfab6e481b803bae0e4d14a0bce assets/ggg-treet/models/block/cypress_door_bottom_left_open.json
@@ -11,7 +17,13 @@ b58b64889d92cc9c56a0528ce0a8785465be34b6 assets/ggg-treet/models/block/cypress_d
 b5e1246739d9300f33587f48bb56c180fddb4a67 assets/ggg-treet/models/block/cypress_door_top_left_open.json
 4f4ebcdf5dfc0fc2b120cadc5b39feb9bdee6708 assets/ggg-treet/models/block/cypress_door_top_right.json
 ee01a1ea4d0818545d32a629e846fc3041339015 assets/ggg-treet/models/block/cypress_door_top_right_open.json
+67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_hanging_sign.json
+67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_sign.json
 b71fec066f179d3cff67ad831e9f83e9c0cbcccd assets/ggg-treet/models/block/cypress_trapdoor_bottom.json
 f63430c643b124bfdf8c017dd5f7d03f7e3e6e0a assets/ggg-treet/models/block/cypress_trapdoor_open.json
 d22ad5a5220b1d735c258a511135e370f27d9161 assets/ggg-treet/models/block/cypress_trapdoor_top.json
+67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_wall_hanging_sign.json
+67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_wall_sign.json
 d98baedecd23128f21ce9d5666bfd7448bc16b62 assets/ggg-treet/models/item/cypress_door.json
+ccdefb1735dbd056e8a3634e5e3fe9746b6ed24a assets/ggg-treet/models/item/cypress_hanging_sign.json
+e1951bfc701ef53b86a7f8e124f4d4c8bcc003ee assets/ggg-treet/models/item/cypress_sign.json

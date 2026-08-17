@@ -24,10 +24,27 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
+import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
+
+import net.minecraft.world.level.block.StandingSignBlock;
+import net.minecraft.world.level.block.WallSignBlock;
+import net.minecraft.world.item.SignItem;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.CeilingHangingSignBlock;
+import net.minecraft.world.level.block.WallHangingSignBlock;
+import net.minecraft.world.item.HangingSignItem;
 
 import java.util.function.Function;
 
 public class ModBlocks {
+
+    public static final WoodType CYPRESS_WOOD_TYPE =
+        WoodTypeBuilder.copyOf(WoodType.OAK)
+                .register(
+                        Identifier.fromNamespaceAndPath(GggTreet.MOD_ID, "treet_cypress"),
+                        BlockSetType.OAK
+                );
 
     public static final Block CYPRESS_LOG = register(
             "cypress_log",
@@ -112,6 +129,41 @@ public class ModBlocks {
         BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR),
         true
     );
+    public static final Block CYPRESS_SIGN = register(
+        "cypress_sign",
+        properties -> new StandingSignBlock(CYPRESS_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN),
+        false
+    );
+
+    public static final Block CYPRESS_WALL_SIGN = register(
+        "cypress_wall_sign",
+        properties -> new WallSignBlock(CYPRESS_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN),
+        false
+    );
+    public static final Item CYPRESS_SIGN_ITEM = registerSignItem(
+        "cypress_sign",
+        CYPRESS_SIGN,
+        CYPRESS_WALL_SIGN
+    );
+    public static final Block CYPRESS_HANGING_SIGN = register(
+        "cypress_hanging_sign",
+        properties -> new CeilingHangingSignBlock(CYPRESS_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN),
+        false
+    );
+    public static final Block CYPRESS_WALL_HANGING_SIGN = register(
+        "cypress_wall_hanging_sign",
+        properties -> new WallHangingSignBlock(CYPRESS_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN),
+        false
+    );
+    public static final Item CYPRESS_HANGING_SIGN_ITEM = registerHangingSignItem(
+        "cypress_hanging_sign",
+        CYPRESS_HANGING_SIGN,
+        CYPRESS_WALL_HANGING_SIGN
+    );
 
     private static Block register(
             String name,
@@ -148,7 +200,52 @@ public class ModBlocks {
                 block
         );
     }
+    private static Item registerHangingSignItem(
+        String name,
+        Block hangingSign,
+        Block wallHangingSign
+) {
+    ResourceKey<Item> itemKey = keyOfItem(name);
 
+    Item item = new HangingSignItem(
+            hangingSign,
+            wallHangingSign,
+            new Item.Properties()
+                    .setId(itemKey)
+                    .useBlockDescriptionPrefix()
+    );
+
+    Registry.register(
+            BuiltInRegistries.ITEM,
+            itemKey,
+            item
+    );
+
+    return item;
+}
+    private static Item registerSignItem(
+        String name,
+        Block standingSign,
+        Block wallSign
+) {
+    ResourceKey<Item> itemKey = keyOfItem(name);
+
+    Item item = new SignItem(
+            standingSign,
+            wallSign,
+            new Item.Properties()
+                    .setId(itemKey)
+                    .useBlockDescriptionPrefix()
+    );
+
+    Registry.register(
+            BuiltInRegistries.ITEM,
+            itemKey,
+            item
+    );
+
+    return item;
+}
     private static ResourceKey<Block> keyOfBlock(String name) {
         return ResourceKey.create(
                 Registries.BLOCK,
@@ -165,24 +262,33 @@ public class ModBlocks {
 
     public static void initialize() {
 
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_WALL_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_HANGING_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_WALL_HANGING_SIGN);
         StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
         StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
             CreativeModeTabEvents
                     .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
                     .register(entries -> {
-                        entries.accept(CYPRESS_LOG.asItem());
-                        entries.accept(STRIPPED_CYPRESS_LOG.asItem());
-                        entries.accept(CYPRESS_WOOD.asItem());
-                        entries.accept(STRIPPED_CYPRESS_WOOD.asItem());
-                        entries.accept(CYPRESS_PLANKS.asItem());
-                        entries.accept(CYPRESS_SLAB.asItem());
-                        entries.accept(CYPRESS_STAIRS.asItem());
-                        entries.accept(CYPRESS_FENCE.asItem());
-                        entries.accept(CYPRESS_FENCE_GATE.asItem());
-                        entries.accept(CYPRESS_BUTTON.asItem());
-                        entries.accept(CYPRESS_PRESSURE_PLATE.asItem());
-                        entries.accept(CYPRESS_DOOR.asItem());
-                        entries.accept(CYPRESS_TRAPDOOR.asItem());
+                        entries.insertAfter(
+        Blocks.PALE_OAK_BUTTON.asItem(),
+        CYPRESS_LOG.asItem(),
+        CYPRESS_WOOD.asItem(),
+        STRIPPED_CYPRESS_LOG.asItem(),
+        STRIPPED_CYPRESS_WOOD.asItem(),
+        CYPRESS_PLANKS.asItem(),
+        CYPRESS_STAIRS.asItem(),
+        CYPRESS_SLAB.asItem(),
+        CYPRESS_FENCE.asItem(),
+        CYPRESS_FENCE_GATE.asItem(),
+        CYPRESS_DOOR.asItem(),
+        CYPRESS_TRAPDOOR.asItem(),
+        CYPRESS_PRESSURE_PLATE.asItem(),
+        CYPRESS_BUTTON.asItem(),
+        CYPRESS_SIGN_ITEM,
+        CYPRESS_HANGING_SIGN_ITEM
+);
                      });
     }
 }

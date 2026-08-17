@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "wooden_fence_gate", 
+  "group": "wooden_sign",
   "pattern": [
-    "S#S",
-    "S#S"
+    "###",
+    "###",
+    " S "
   ],
   "key": {
     "#": "ggg-treet:cypress_planks",
     "S": "minecraft:stick"
   },
   "result": {
-    "id": "ggg-treet:cypress_fence_gate",
-    "count": 1
+    "id": "ggg-treet:cypress_sign",
+    "count": 3
   }
 }

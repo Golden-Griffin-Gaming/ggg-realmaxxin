@@ -1,15 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group":  "wooden_slab",
   "pattern": [
+    "C C",
+    "###",
     "###"
   ],
   "key": {
-    "#": "ggg-treet:cypress_planks"
+    "C": "minecraft:iron_chain",
+    "#": "ggg-treet:stripped_cypress_log"
   },
   "result": {
-    "id": "ggg-treet:cypress_slab",
+    "id": "ggg-treet:cypress_hanging_sign",
     "count": 6
   }
 }
