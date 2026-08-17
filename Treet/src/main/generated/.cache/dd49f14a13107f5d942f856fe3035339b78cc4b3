@@ -5,6 +5,8 @@ ce17d5da129e180540992eb4b41847b5d48e4af1 assets/ggg-treet/blockstates/cypress_si
 2aa8dcb64305454e1c45cdbf4042bf8d3f174d6b assets/ggg-treet/blockstates/cypress_trapdoor.json
 9c547cbe6e954c824b56b2b1c694e2897ee9bd3c assets/ggg-treet/blockstates/cypress_wall_hanging_sign.json
 a382be1b9029bb42965fb6d4d080a132771e2b2e assets/ggg-treet/blockstates/cypress_wall_sign.json
+3def5fe05390b479dffc9d35f20de09755ca151f assets/ggg-treet/items/cypress_boat.json
+b23b0db6dfe08784b93c014d5cf1a9f4bd2d2e04 assets/ggg-treet/items/cypress_chest_boat.json
 73d68e64e37994a43743baff482053853ea048a1 assets/ggg-treet/items/cypress_door.json
 87a0fd7569fe6e65f4bfae9af6a6b0e0328dca86 assets/ggg-treet/items/cypress_hanging_sign.json
 dc1e549f3e685b42ae6191d2c89e6956d941386f assets/ggg-treet/items/cypress_sign.json
@@ -24,6 +26,8 @@ f63430c643b124bfdf8c017dd5f7d03f7e3e6e0a assets/ggg-treet/models/block/cypress_t
 d22ad5a5220b1d735c258a511135e370f27d9161 assets/ggg-treet/models/block/cypress_trapdoor_top.json
 67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_wall_hanging_sign.json
 67bc90bb7afe65d1208fa29b47438335c8aae5ad assets/ggg-treet/models/block/cypress_wall_sign.json
+7a3e903f3a7667c6daeb9b804b5d90c125cd2647 assets/ggg-treet/models/item/cypress_boat.json
+185d824b315d1f27831a57e241d9842cf15660f3 assets/ggg-treet/models/item/cypress_chest_boat.json
 d98baedecd23128f21ce9d5666bfd7448bc16b62 assets/ggg-treet/models/item/cypress_door.json
 ccdefb1735dbd056e8a3634e5e3fe9746b6ed24a assets/ggg-treet/models/item/cypress_hanging_sign.json
 e1951bfc701ef53b86a7f8e124f4d4c8bcc003ee assets/ggg-treet/models/item/cypress_sign.json

@@ -9,6 +9,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BoatItem;
+import net.minecraft.world.item.Items;
 
 import java.util.function.Function;
 
@@ -37,6 +39,34 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
+    public static final Item CYPRESS_BOAT = register(
+        "cypress_boat",
+        properties -> new BoatItem(ModEntities.CYPRESS_BOAT, properties),
+        new Item.Properties().stacksTo(1)
+    );
+
+    public static final Item CYPRESS_CHEST_BOAT = register(
+        "cypress_chest_boat",
+        properties -> new BoatItem(ModEntities.CYPRESS_CHEST_BOAT, properties),
+        new Item.Properties().stacksTo(1)
+    );
+    public static final Item CYPRESS_SEED_POD = register(
+        "cypress_seed_pod",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item CYPRESS_SEEDS = register(
+        "cypress_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item CYPRESS_SEEDLING = register(
+        "cypress_seedling",
+        Item::new,
+        new Item.Properties()
+);
 
     
     public static <T extends Item> T register(
@@ -71,6 +101,18 @@ public class ModItems {
             .register(entries -> {
                 entries.accept(MAHOGANY_SEEDS);
                 entries.accept(MAHOGANY_SEED_POD);
+                entries.accept(CYPRESS_SEED_POD);
+                entries.accept(CYPRESS_SEEDS);
+                entries.accept(CYPRESS_SEEDLING);
             });
+        CreativeModeTabEvents
+            .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+            .register(entries -> {
+            entries.insertAfter(
+                    Items.PALE_OAK_CHEST_BOAT,
+                    CYPRESS_BOAT,
+                    CYPRESS_CHEST_BOAT
+            );
+        });
 }
 }

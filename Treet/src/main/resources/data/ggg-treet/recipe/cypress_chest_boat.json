@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chest_boat",
+  "ingredients": [
+    "minecraft:chest",
+    "ggg-treet:cypress_boat"
+  ],
+  "result": {
+    "id": "ggg-treet:cypress_chest_boat"
+  }
+}

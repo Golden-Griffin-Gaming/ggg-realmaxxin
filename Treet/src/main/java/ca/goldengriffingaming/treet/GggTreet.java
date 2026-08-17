@@ -42,6 +42,15 @@ public class GggTreet implements ModInitializer {
                         "blocks/fir_leaves"
                 )
         );
+    private static final ResourceKey<LootTable> CYPRESS_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/cypress_leaves"
+                )
+        );
+
 
 
 	@Override
@@ -50,7 +59,8 @@ public class GggTreet implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-	ModItems.initialize();
+	ModEntities.initialize();
+    ModItems.initialize();
     ModBlocks.initialize();
 
 	LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
@@ -71,6 +81,15 @@ public class GggTreet implements ModInitializer {
                 .add(LootItem.lootTableItem(ModItems.FIR_CONE));
 
         tableBuilder.withPool(conePool);
+    }
+    if (CYPRESS_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.CYPRESS_SEED_POD));
+
+        tableBuilder.withPool(podPool);
     }
 });
 

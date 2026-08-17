@@ -1,6 +1,7 @@
 package ca.goldengriffingaming.treet.datagen;
 
 import ca.goldengriffingaming.treet.ModBlocks;
+import ca.goldengriffingaming.treet.ModItems;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -42,17 +43,27 @@ public class GggTreetModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerators itemModelGenerator) {
-        itemModelGenerator.generateFlatItem(
-                ModBlocks.CYPRESS_SIGN_ITEM,
-                ModelTemplates.FLAT_ITEM
-        );
+public void generateItemModels(ItemModelGenerators itemModelGenerator) {
+    itemModelGenerator.generateFlatItem(
+            ModBlocks.CYPRESS_SIGN_ITEM,
+            ModelTemplates.FLAT_ITEM
+    );
 
-        itemModelGenerator.generateFlatItem(
-                ModBlocks.CYPRESS_HANGING_SIGN_ITEM,
-                ModelTemplates.FLAT_ITEM
-        );
-    }
+    itemModelGenerator.generateFlatItem(
+            ModBlocks.CYPRESS_HANGING_SIGN_ITEM,
+            ModelTemplates.FLAT_ITEM
+    );
+
+    itemModelGenerator.generateFlatItem(
+            ModItems.CYPRESS_BOAT,
+            ModelTemplates.FLAT_ITEM
+    );
+
+    itemModelGenerator.generateFlatItem(
+            ModItems.CYPRESS_CHEST_BOAT,
+            ModelTemplates.FLAT_ITEM
+    );
+}
 
     @Override
     public String getName() {

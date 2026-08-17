@@ -17,5 +17,10 @@
   "block.ggg-treet.cypress_door": "Cypress Door",
   "block.ggg-treet.cypress_trapdoor": "Cypress Trapdoor",
   "block.ggg-treet.cypress_sign": "Cypress Sign",
-  "block.ggg-treet.cypress_hanging_sign": "Cypress Hanging Sign"
+  "block.ggg-treet.cypress_hanging_sign": "Cypress Hanging Sign",
+  "item.ggg-treet.cypress_boat": "Cypress Boat",
+  "item.ggg-treet.cypress_chest_boat": "Cypress Chest Boat",
+  "item.ggg-treet.cypress_seed_pod": "Cypress Seed Pod",
+  "item.ggg-treet.cypress_seeds": "Cypress Seeds",
+  "item.ggg-treet.cypress_seedling": "Cypress Seedling"
 }

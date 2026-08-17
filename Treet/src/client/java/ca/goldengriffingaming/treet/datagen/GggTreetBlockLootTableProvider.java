@@ -43,5 +43,6 @@ public class GggTreetBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropOther(ModBlocks.CYPRESS_WALL_SIGN, ModBlocks.CYPRESS_SIGN_ITEM);
         dropOther(ModBlocks.CYPRESS_HANGING_SIGN, ModBlocks.CYPRESS_HANGING_SIGN_ITEM);
         dropOther(ModBlocks.CYPRESS_WALL_HANGING_SIGN, ModBlocks.CYPRESS_HANGING_SIGN_ITEM);
+
     }
 }

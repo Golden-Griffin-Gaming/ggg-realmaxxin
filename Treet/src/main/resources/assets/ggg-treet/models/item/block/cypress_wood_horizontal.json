@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ggg-treet:block/cypress_wood",
+    "side": "ggg-treet:block/cypress_wood"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "ggg-treet:cypress_seed_pod"
+  ],
+  "result": {
+    "id": "ggg-treet:cypress_seeds",
+    "count": 6
+  }
+}

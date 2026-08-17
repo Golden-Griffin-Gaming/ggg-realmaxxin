@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ggg-treet:block/stripped_cypress_log_top",
+    "side": "ggg-treet:block/stripped_cypress_log"
+  }
+}
