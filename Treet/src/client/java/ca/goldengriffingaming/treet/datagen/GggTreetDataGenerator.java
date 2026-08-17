@@ -10,5 +10,6 @@ public class GggTreetDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 pack.addProvider(GggTreetBlockLootTableProvider::new);
+pack.addProvider(GggTreetModelProvider::new);
     }
 }

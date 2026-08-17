@@ -13,5 +13,7 @@
   "block.ggg-treet.cypress_fence": "Cypress Fence",
   "block.ggg-treet.cypress_fence_gate": "Cypress Fence Gate",
   "block.ggg-treet.cypress_button": "Cypress Button",
-  "block.ggg-treet.cypress_pressure_plate": "Cypress Pressure Plate"
+  "block.ggg-treet.cypress_pressure_plate": "Cypress Pressure Plate",
+  "block.ggg-treet.cypress_door": "Cypress Door",
+  "block.ggg-treet.cypress_trapdoor": "Cypress Trapdoor"
 }

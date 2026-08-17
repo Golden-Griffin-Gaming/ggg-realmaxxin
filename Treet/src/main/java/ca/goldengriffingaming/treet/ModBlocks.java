@@ -22,6 +22,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.TrapDoorBlock;
 
 import java.util.function.Function;
 
@@ -97,6 +99,19 @@ public class ModBlocks {
         BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE),
         true
     );
+    public static final Block CYPRESS_DOOR = register(
+        "cypress_door",
+        properties -> new DoorBlock(BlockSetType.OAK, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR),
+        true
+    );
+
+    public static final Block CYPRESS_TRAPDOOR = register(
+        "cypress_trapdoor",
+        properties -> new TrapDoorBlock(BlockSetType.OAK, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR),
+        true
+    );
 
     private static Block register(
             String name,
@@ -166,6 +181,8 @@ public class ModBlocks {
                         entries.accept(CYPRESS_FENCE_GATE.asItem());
                         entries.accept(CYPRESS_BUTTON.asItem());
                         entries.accept(CYPRESS_PRESSURE_PLATE.asItem());
+                        entries.accept(CYPRESS_DOOR.asItem());
+                        entries.accept(CYPRESS_TRAPDOOR.asItem());
                      });
     }
 }

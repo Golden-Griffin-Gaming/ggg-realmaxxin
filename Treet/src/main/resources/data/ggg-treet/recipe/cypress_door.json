@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "ggg-treet:cypress_planks"
+  },
+  "result": {
+    "id": "ggg-treet:cypress_door",
+    "count": 3
+  }
+}

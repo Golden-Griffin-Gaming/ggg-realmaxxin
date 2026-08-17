@@ -37,5 +37,7 @@ public class GggTreetBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CYPRESS_FENCE_GATE);
         dropSelf(ModBlocks.CYPRESS_BUTTON);
         dropSelf(ModBlocks.CYPRESS_PRESSURE_PLATE);
+        dropSelf(ModBlocks.CYPRESS_DOOR);
+        dropSelf(ModBlocks.CYPRESS_TRAPDOOR);
     }
 }
