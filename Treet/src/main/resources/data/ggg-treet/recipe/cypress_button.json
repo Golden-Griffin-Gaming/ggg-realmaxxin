@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": "ggg-treet:cypress_planks"
+  },
+  "result": {
+    "id": "ggg-treet:cypress_button",
+    "count": 1
+  }
+}

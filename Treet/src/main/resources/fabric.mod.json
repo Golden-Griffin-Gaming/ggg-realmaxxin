@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"ca.goldengriffingaming.treet.client.GggTreetClient"
+		],
+		"fabric-datagen": [
+			"ca.goldengriffingaming.treet.datagen.GggTreetDataGenerator"
 		]
 	},
 	"mixins": [

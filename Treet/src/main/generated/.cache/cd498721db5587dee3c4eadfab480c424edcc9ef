@@ -1,0 +1,12 @@
+// 26.1.2	-999999999-01-01T00:00:00	Treet/Block Loot Tables
+5b0929f8acd1a58150012b2f2ea558430f18b368 data/ggg-treet/loot_table/blocks/cypress_button.json
+12fcbe640cbdf2cf39633d6c76669df0420062aa data/ggg-treet/loot_table/blocks/cypress_fence.json
+53ce44ce11c92cccdb231285a3e7349d332c1586 data/ggg-treet/loot_table/blocks/cypress_fence_gate.json
+d97da5163222b667e318351afd2ab784dd2ad175 data/ggg-treet/loot_table/blocks/cypress_log.json
+4597fc1541a280387617ae89056023041f30acc7 data/ggg-treet/loot_table/blocks/cypress_planks.json
+8a8a5345597786d5377885370c98f2319afe6a72 data/ggg-treet/loot_table/blocks/cypress_pressure_plate.json
+84753138d25ee650687dd8e496348eb777de7681 data/ggg-treet/loot_table/blocks/cypress_slab.json
+3122833c103d3826e3991af77307806843fc59ad data/ggg-treet/loot_table/blocks/cypress_stairs.json
+6aced47ed9505d96eb6a5f50c7b777ff823a0372 data/ggg-treet/loot_table/blocks/cypress_wood.json
+39749303f6279b6354ef0d3414f47af2de14778e data/ggg-treet/loot_table/blocks/stripped_cypress_log.json
+de7be6452b83fc2985f8b69846c4ebed535f2378 data/ggg-treet/loot_table/blocks/stripped_cypress_wood.json

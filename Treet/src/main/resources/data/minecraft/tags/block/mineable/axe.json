@@ -5,6 +5,11 @@
     "ggg-treet:stripped_cypress_log",
     "ggg-treet:cypress_wood",
     "ggg-treet:stripped_cypress_wood",
-    "ggg-treet:cypress_planks"
+    "ggg-treet:cypress_planks",
+    "ggg-treet:cypress_slab",
+    "ggg-treet:cypress_stairs",
+    "ggg-treet:cypress_fence",
+    "ggg-treet:cypress_fence_gate",
+    "ggg-treet:cypress_button"
   ]
 }

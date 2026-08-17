@@ -7,5 +7,11 @@
   "block.ggg-treet.stripped_cypress_log": "Stripped Cypress Log",
   "block.ggg-treet.cypress_wood": "Cypress Wood",
   "block.ggg-treet.stripped_cypress_wood": "Stripped Cypress Wood",
-  "block.ggg-treet.cypress_planks": "Cypress Planks"
+  "block.ggg-treet.cypress_planks": "Cypress Planks",
+  "block.ggg-treet.cypress_slab": "Cypress Slab",
+  "block.ggg-treet.cypress_stairs": "Cypress Stairs",
+  "block.ggg-treet.cypress_fence": "Cypress Fence",
+  "block.ggg-treet.cypress_fence_gate": "Cypress Fence Gate",
+  "block.ggg-treet.cypress_button": "Cypress Button",
+  "block.ggg-treet.cypress_pressure_plate": "Cypress Pressure Plate"
 }

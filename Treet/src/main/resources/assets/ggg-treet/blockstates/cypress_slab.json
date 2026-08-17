@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ggg-treet:block/cypress_slab"
+    },
+    "type=top": {
+      "model": "ggg-treet:block/cypress_slab_top"
+    },
+    "type=double": {
+      "model": "ggg-treet:block/cypress_planks"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#S#",
+    "#S#"
+  ],
+  "key": {
+    "#": "ggg-treet:cypress_planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "ggg-treet:cypress_fence",
+    "count": 3
+  }
+}
