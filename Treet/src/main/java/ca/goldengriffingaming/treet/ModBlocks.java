@@ -34,6 +34,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.CeilingHangingSignBlock;
 import net.minecraft.world.level.block.WallHangingSignBlock;
 import net.minecraft.world.item.HangingSignItem;
+import net.minecraft.world.level.block.ShelfBlock;
 
 import java.util.function.Function;
 
@@ -77,6 +78,12 @@ public class ModBlocks {
         "cypress_planks",
         Block::new,
         BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS),
+        true
+    );
+    public static final Block CYPRESS_SHELF = register(
+        "cypress_shelf",
+        ShelfBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SHELF),
         true
     );
 
@@ -266,6 +273,7 @@ public class ModBlocks {
         ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_WALL_SIGN);
         ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_HANGING_SIGN);
         ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_WALL_HANGING_SIGN);
+        ((FabricBlockEntityType) BlockEntityType.SHELF).addValidBlock(CYPRESS_SHELF);
         StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
         StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
             CreativeModeTabEvents
@@ -278,6 +286,7 @@ public class ModBlocks {
         STRIPPED_CYPRESS_LOG.asItem(),
         STRIPPED_CYPRESS_WOOD.asItem(),
         CYPRESS_PLANKS.asItem(),
+        CYPRESS_SHELF.asItem(),
         CYPRESS_STAIRS.asItem(),
         CYPRESS_SLAB.asItem(),
         CYPRESS_FENCE.asItem(),

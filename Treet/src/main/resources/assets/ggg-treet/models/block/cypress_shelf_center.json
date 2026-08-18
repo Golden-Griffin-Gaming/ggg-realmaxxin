@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_shelf_center",
+  "textures": {
+    "all": "ggg-treet:block/cypress_shelf",
+    "particle": "ggg-treet:block/stripped_cypress_log"
+  }
+}

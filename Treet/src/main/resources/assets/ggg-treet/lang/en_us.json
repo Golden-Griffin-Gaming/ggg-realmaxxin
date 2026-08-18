@@ -10,6 +10,7 @@
   "block.ggg-treet.cypress_planks": "Cypress Planks",
   "block.ggg-treet.cypress_slab": "Cypress Slab",
   "block.ggg-treet.cypress_stairs": "Cypress Stairs",
+  "block.ggg-treet.cypress_shelf": "Cypress Shelf",
   "block.ggg-treet.cypress_fence": "Cypress Fence",
   "block.ggg-treet.cypress_fence_gate": "Cypress Fence Gate",
   "block.ggg-treet.cypress_button": "Cypress Button",
@@ -18,8 +19,8 @@
   "block.ggg-treet.cypress_trapdoor": "Cypress Trapdoor",
   "block.ggg-treet.cypress_sign": "Cypress Sign",
   "block.ggg-treet.cypress_hanging_sign": "Cypress Hanging Sign",
-  "item.ggg-treet.cypress_boat": "Cypress Boat",
-  "item.ggg-treet.cypress_chest_boat": "Cypress Chest Boat",
+  "entity.ggg-treet.cypress_boat": "Cypress Boat",
+  "entity.ggg-treet.cypress_chest_boat": "Cypress Chest Boat",
   "item.ggg-treet.cypress_seed_pod": "Cypress Seed Pod",
   "item.ggg-treet.cypress_seeds": "Cypress Seeds",
   "item.ggg-treet.cypress_seedling": "Cypress Seedling"
