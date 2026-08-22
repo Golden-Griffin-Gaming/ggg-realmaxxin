@@ -66,7 +66,24 @@ public class ModItems {
         "cypress_seedling",
         Item::new,
         new Item.Properties()
-);
+    );
+    public static final Item REDWOOD_CONE = register(
+        "redwood_cone",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item REDWOOD_SEEDS = register(
+        "redwood_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item REDWOOD_SEEDLING = register(
+        "redwood_seedling",
+        Item::new,
+        new Item.Properties()
+    );
 
     
     public static <T extends Item> T register(
@@ -104,6 +121,11 @@ public class ModItems {
                 entries.accept(CYPRESS_SEED_POD);
                 entries.accept(CYPRESS_SEEDS);
                 entries.accept(CYPRESS_SEEDLING);
+                entries.accept(FIR_CONE);
+                entries.accept(FIR_SEEDS);
+                entries.accept(REDWOOD_CONE);
+                entries.accept(REDWOOD_SEEDS);
+                entries.accept(REDWOOD_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

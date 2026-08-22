@@ -50,7 +50,14 @@ public class GggTreet implements ModInitializer {
                         "blocks/cypress_leaves"
                 )
         );
-
+    private static final ResourceKey<LootTable> REDWOOD_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/redwood_leaves"
+                )
+        );
 
 
 	@Override
@@ -88,6 +95,15 @@ public class GggTreet implements ModInitializer {
                 .setRolls(ConstantValue.exactly(1.0F))
                 .when(LootItemRandomChanceCondition.randomChance(0.02F))
                 .add(LootItem.lootTableItem(ModItems.CYPRESS_SEED_POD));
+
+        tableBuilder.withPool(podPool);
+    }
+        if (REDWOOD_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.REDWOOD_CONE));
 
         tableBuilder.withPool(podPool);
     }

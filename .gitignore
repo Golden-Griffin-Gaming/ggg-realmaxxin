@@ -42,3 +42,10 @@ Desktop.ini
 # Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+/Treet/.Affinity Files
+/Treet/_bop_hanging_sign_check
+/Treet/_bop_shelf_data
+/Treet/_bop_shelf_template
+/Treet/_cypress_hanging_sign_check/assets/ggg-treet/blockstates
+/Treet/_fir_trapdoor_check
+/Treet/_trapdoor_check/assets/ggg-treet/blockstates

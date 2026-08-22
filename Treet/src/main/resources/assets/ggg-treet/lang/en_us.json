@@ -23,5 +23,8 @@
   "entity.ggg-treet.cypress_chest_boat": "Cypress Chest Boat",
   "item.ggg-treet.cypress_seed_pod": "Cypress Seed Pod",
   "item.ggg-treet.cypress_seeds": "Cypress Seeds",
-  "item.ggg-treet.cypress_seedling": "Cypress Seedling"
+  "item.ggg-treet.cypress_seedling": "Cypress Seedling",
+  "item.ggg-treet.redwood_cone": "Redwood Cone",
+  "item.ggg-treet.redwood_seeds": "Redwood Seeds",
+  "item.ggg-treet.redwood_seedling": "Redwood Seedling"
 }
