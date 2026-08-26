@@ -85,6 +85,24 @@ public class ModItems {
         new Item.Properties()
     );
 
+    public static final Item JACARANDA_SEED_CAPSULE = register(
+        "jacaranda_seed_capsule",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item JACARANDA_SEEDS = register(
+        "jacaranda_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item JACARANDA_SEEDLING = register(
+        "jacaranda_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
     
     public static <T extends Item> T register(
             String name,
@@ -126,6 +144,9 @@ public class ModItems {
                 entries.accept(REDWOOD_CONE);
                 entries.accept(REDWOOD_SEEDS);
                 entries.accept(REDWOOD_SEEDLING);
+                entries.accept(JACARANDA_SEEDS);
+                entries.accept(JACARANDA_SEED_CAPSULE);
+                entries.accept(JACARANDA_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
