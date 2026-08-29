@@ -58,7 +58,22 @@ public class GggTreet implements ModInitializer {
                         "blocks/redwood_leaves"
                 )
         );
-
+        private static final ResourceKey<LootTable> JACARANDA_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/jacaranda_leaves"
+                )
+        );
+        private static final ResourceKey<LootTable> PINE_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/pine_leaves"
+                )
+        );
 
 	@Override
 	public void onInitialize() {
@@ -66,9 +81,13 @@ public class GggTreet implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-	ModEntities.initialize();
-    ModItems.initialize();
-    ModBlocks.initialize();
+        ModParticles.initialize();
+
+        ModEntities.initialize();
+        ModItems.initialize();
+        ModBlocks.initialize();
+        ModFoliagePlacers.initialize();
+        ModTrunkPlacers.initialize();
 
 	LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
     if (MAHOGANY_LEAVES_LOOT_TABLE.equals(key)) {
@@ -107,6 +126,16 @@ public class GggTreet implements ModInitializer {
 
         tableBuilder.withPool(podPool);
     }
+    if (JACARANDA_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.JACARANDA_SEED_CAPSULE));
+
+        tableBuilder.withPool(podPool);
+    }
+
 });
 
 		LOGGER.info("GGG-Treet is a work in progress.");

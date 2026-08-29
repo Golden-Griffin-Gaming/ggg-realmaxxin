@@ -102,6 +102,23 @@ public class ModItems {
         Item::new,
         new Item.Properties()
     );
+    public static final Item PINE_CONE = register(
+        "pine_cone",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item PINE_SEEDS = register(
+        "pine_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item PINE_SEEDLING = register(
+        "pine_seedling",
+        Item::new,
+        new Item.Properties()
+    );
 
     
     public static <T extends Item> T register(
@@ -147,6 +164,9 @@ public class ModItems {
                 entries.accept(JACARANDA_SEEDS);
                 entries.accept(JACARANDA_SEED_CAPSULE);
                 entries.accept(JACARANDA_SEEDLING);
+                entries.accept(PINE_CONE);
+                entries.accept(PINE_SEEDS);
+                entries.accept(PINE_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

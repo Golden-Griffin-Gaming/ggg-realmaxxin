@@ -9,10 +9,26 @@ import net.minecraft.client.model.object.boat.BoatModel;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 
+import ca.goldengriffingaming.treet.ModParticles;
+
+import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
+
+import net.minecraft.client.particle.FallingLeavesParticle;
+
 public class GggTreetClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+        ParticleProviderRegistry.getInstance().register(
+        ModParticles.PINE_LEAVES,
+        FallingLeavesParticle.CherryProvider::new
+        );
+
+        ParticleProviderRegistry.getInstance().register(
+        ModParticles.MAHOGANY_LEAVES,
+        FallingLeavesParticle.CherryProvider::new
+        );
 
         ModelLayerRegistry.registerModelLayer(
                 ModModelLayers.CYPRESS_BOAT,

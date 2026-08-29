@@ -3,7 +3,8 @@
 	"package": "ca.goldengriffingaming.treet.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"ExampleClientMixin"
+		"ExampleClientMixin",
+		"TintedParticleLeavesBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
