@@ -16,6 +16,8 @@ import java.util.function.Function;
 
 public class ModItems {
 
+// --- HONDURAN MAHOGANY ITEMS ---
+
     public static final Item MAHOGANY_SEEDS = register(
             "mahogany_seeds",
             Item::new,
@@ -28,6 +30,8 @@ public class ModItems {
             new Item.Properties()
     );
 
+    // --- DOUGLAS FIR ITEMS ---
+
         public static final Item FIR_SEEDS = register(
             "fir_seeds",
             Item::new,
@@ -39,6 +43,9 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
+
+// --- LEYLAND CYPRESS ITEMS ---
+
     public static final Item CYPRESS_BOAT = register(
         "cypress_boat",
         properties -> new BoatItem(ModEntities.CYPRESS_BOAT, properties),
@@ -67,6 +74,9 @@ public class ModItems {
         Item::new,
         new Item.Properties()
     );
+
+//--- COAST REDWOOD ITEMS ---
+
     public static final Item REDWOOD_CONE = register(
         "redwood_cone",
         Item::new,
@@ -85,6 +95,8 @@ public class ModItems {
         new Item.Properties()
     );
 
+// --- BLUE JACARANDA ITEMS ---
+
     public static final Item JACARANDA_SEED_CAPSULE = register(
         "jacaranda_seed_capsule",
         Item::new,
@@ -102,6 +114,9 @@ public class ModItems {
         Item::new,
         new Item.Properties()
     );
+
+    // --- EASTERN WHITE PINE ITEMS ---
+
     public static final Item PINE_CONE = register(
         "pine_cone",
         Item::new,
@@ -116,6 +131,26 @@ public class ModItems {
 
     public static final Item PINE_SEEDLING = register(
         "pine_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
+    // --- WEEPING WILLOW ITEMS ---
+
+    public static final Item WILLOW_CATKIN = register(
+        "willow_catkin",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item WILLOW_SEEDS = register(
+        "willow_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item WILLOW_SEEDLING = register(
+        "willow_seedling",
         Item::new,
         new Item.Properties()
     );
@@ -167,6 +202,9 @@ public class ModItems {
                 entries.accept(PINE_CONE);
                 entries.accept(PINE_SEEDS);
                 entries.accept(PINE_SEEDLING);
+                entries.accept(WILLOW_CATKIN);
+                entries.accept(WILLOW_SEEDS);
+                entries.accept(WILLOW_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

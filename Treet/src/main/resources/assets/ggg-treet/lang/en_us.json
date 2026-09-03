@@ -50,7 +50,10 @@
   "block.biomesoplenty.pine_sapling": "Eastern White Pine Sapling",
   "entity.biomesoplenty.pine_boat": "Eastern White Pine Boat",
   "entity.biomesoplenty.pine_chest_boat": "Eastern White Pine Chest Boat",
-  "item.ggg-treet.pine_leaves": "Eastern White Pine Leaves"
+  "item.ggg-treet.pine_leaves": "Eastern White Pine Leaves",
+  "item.ggg-treet.willow_seeds": "Weeping Willow Seeds",
+  "item.ggg-treet.willow_seedling": "Weeping Willow Seedling",
+  "item.ggg-treet.willow_catkin": "Weeping Willow Catkin"
 
 
 }

@@ -74,6 +74,14 @@ public class GggTreet implements ModInitializer {
                         "blocks/pine_leaves"
                 )
         );
+        private static final ResourceKey<LootTable> WILLOW_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/willow_leaves"
+                )
+        );
 
 	@Override
 	public void onInitialize() {
@@ -132,6 +140,15 @@ public class GggTreet implements ModInitializer {
                 .setRolls(ConstantValue.exactly(1.0F))
                 .when(LootItemRandomChanceCondition.randomChance(0.02F))
                 .add(LootItem.lootTableItem(ModItems.JACARANDA_SEED_CAPSULE));
+
+        tableBuilder.withPool(podPool);
+    }
+    if (WILLOW_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.WILLOW_CATKIN));
 
         tableBuilder.withPool(podPool);
     }

@@ -1,6 +1,7 @@
 package ca.goldengriffingaming.treet;
 
 import ca.goldengriffingaming.treet.worldgen.EasternWhitePineTrunkPlacer;
+import ca.goldengriffingaming.treet.worldgen.WeepingWillowTrunkPlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -14,6 +15,15 @@ public class ModTrunkPlacers {
                     GggTreet.id("eastern_white_pine_trunk_placer"),
                     new TrunkPlacerType<>(
                             EasternWhitePineTrunkPlacer.CODEC
+                    )
+            );
+
+    public static final TrunkPlacerType<WeepingWillowTrunkPlacer>
+            WEEPING_WILLOW = Registry.register(
+                    BuiltInRegistries.TRUNK_PLACER_TYPE,
+                    GggTreet.id("weeping_willow_trunk_placer"),
+                    new TrunkPlacerType<>(
+                            WeepingWillowTrunkPlacer.CODEC
                     )
             );
 

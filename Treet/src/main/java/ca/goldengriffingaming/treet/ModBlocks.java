@@ -40,6 +40,8 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
+// --- CYPRESS BLOCKS ---
+
     public static final WoodType CYPRESS_WOOD_TYPE =
         WoodTypeBuilder.copyOf(WoodType.OAK)
                 .register(
@@ -269,6 +271,8 @@ public class ModBlocks {
 
     public static void initialize() {
 
+    // --- CYPRESS BLOCKS ---
+
         ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_SIGN);
         ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_WALL_SIGN);
         ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_HANGING_SIGN);
@@ -281,6 +285,7 @@ public class ModBlocks {
                     .register(entries -> {
                         entries.insertAfter(
         Blocks.PALE_OAK_BUTTON.asItem(),
+
         CYPRESS_LOG.asItem(),
         CYPRESS_WOOD.asItem(),
         STRIPPED_CYPRESS_LOG.asItem(),
