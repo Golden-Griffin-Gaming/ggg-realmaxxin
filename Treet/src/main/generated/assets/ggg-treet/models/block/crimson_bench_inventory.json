@@ -1,0 +1,6 @@
+{
+  "parent": "ggg-treet:block/furniture/wooden_bench_inventory",
+  "textures": {
+    "planks": "minecraft:block/crimson_planks"
+  }
+}

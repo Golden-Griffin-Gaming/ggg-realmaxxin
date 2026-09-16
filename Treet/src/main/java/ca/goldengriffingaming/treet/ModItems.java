@@ -155,7 +155,20 @@ public class ModItems {
         new Item.Properties()
     );
 
-    
+    // --- RED MAPLE ITEMS ---
+
+    public static final Item RED_MAPLE_SAMARA = register(
+        "red_maple_samara",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item RED_MAPLE_SEEDLING = register(
+        "red_maple_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
     public static <T extends Item> T register(
             String name,
             Function<Item.Properties, T> itemFactory,
@@ -205,6 +218,8 @@ public class ModItems {
                 entries.accept(WILLOW_CATKIN);
                 entries.accept(WILLOW_SEEDS);
                 entries.accept(WILLOW_SEEDLING);
+                entries.accept(RED_MAPLE_SAMARA);
+                entries.accept(RED_MAPLE_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

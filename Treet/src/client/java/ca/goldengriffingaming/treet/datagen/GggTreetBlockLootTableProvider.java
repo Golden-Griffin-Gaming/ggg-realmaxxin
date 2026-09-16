@@ -1,7 +1,7 @@
 package ca.goldengriffingaming.treet.datagen;
 
 import ca.goldengriffingaming.treet.ModBlocks;
-
+import net.minecraft.world.level.block.Block;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 
@@ -31,7 +31,6 @@ public class GggTreetBlockLootTableProvider extends FabricBlockLootSubProvider {
                 ModBlocks.CYPRESS_SLAB,
                 createSlabItemTable(ModBlocks.CYPRESS_SLAB)
         );
-
         dropSelf(ModBlocks.CYPRESS_STAIRS);
         dropSelf(ModBlocks.CYPRESS_FENCE);
         dropSelf(ModBlocks.CYPRESS_FENCE_GATE);
@@ -43,6 +42,13 @@ public class GggTreetBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropOther(ModBlocks.CYPRESS_WALL_SIGN, ModBlocks.CYPRESS_SIGN_ITEM);
         dropOther(ModBlocks.CYPRESS_HANGING_SIGN, ModBlocks.CYPRESS_HANGING_SIGN_ITEM);
         dropOther(ModBlocks.CYPRESS_WALL_HANGING_SIGN, ModBlocks.CYPRESS_HANGING_SIGN_ITEM);
+
+        for (Block bench : ModBlocks.BENCHES.values()) {
+    dropSelf(bench);
+}
+        for (Block picnicTable : ModBlocks.PICNIC_TABLES.values()) {
+    dropSelf(picnicTable);
+}
 
     }
 }

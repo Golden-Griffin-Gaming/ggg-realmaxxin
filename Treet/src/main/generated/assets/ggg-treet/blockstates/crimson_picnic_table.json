@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ggg-treet:block/crimson_picnic_table",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "ggg-treet:block/crimson_picnic_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ggg-treet:block/crimson_picnic_table",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "ggg-treet:block/crimson_picnic_table"
+    }
+  }
+}

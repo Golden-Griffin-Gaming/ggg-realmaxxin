@@ -10,6 +10,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.vehicle.boat.Boat;
 import net.minecraft.world.entity.vehicle.boat.ChestBoat;
+import ca.goldengriffingaming.treet.entity.SeatEntity;
 
 public class ModEntities {
 
@@ -44,6 +45,17 @@ public class ModEntities {
             .eyeHeight(0.5625F)
             .clientTrackingRange(10)
     );
+
+    public static final EntityType<SeatEntity> SEAT = register(
+        "seat",
+        EntityType.Builder.<SeatEntity>of(
+                SeatEntity::new,
+                MobCategory.MISC
+        )
+        .noLootTable()
+        .sized(0.01F, 0.01F)
+        .clientTrackingRange(4)
+);
 
     private static <T extends Entity> EntityType<T> register(
             String name,

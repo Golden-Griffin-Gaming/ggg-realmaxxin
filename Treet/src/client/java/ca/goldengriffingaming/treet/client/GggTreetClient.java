@@ -15,6 +15,8 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
 
 import net.minecraft.client.particle.FallingLeavesParticle;
 
+import net.minecraft.client.renderer.entity.NoopRenderer;
+
 public class GggTreetClient implements ClientModInitializer {
 
     @Override
@@ -55,5 +57,9 @@ public class GggTreetClient implements ClientModInitializer {
                         ModModelLayers.CYPRESS_CHEST_BOAT
                 )
         );
+        EntityRenderers.register(
+        ModEntities.SEAT,
+        NoopRenderer::new
+);
     }
 }

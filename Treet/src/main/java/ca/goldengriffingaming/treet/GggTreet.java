@@ -82,6 +82,14 @@ public class GggTreet implements ModInitializer {
                         "blocks/willow_leaves"
                 )
         );
+        private static final ResourceKey<LootTable> RED_MAPLE_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/red_maple_leaves"
+                )
+        );
 
 	@Override
 	public void onInitialize() {
@@ -152,6 +160,16 @@ public class GggTreet implements ModInitializer {
 
         tableBuilder.withPool(podPool);
     }
+        if (RED_MAPLE_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.RED_MAPLE_SAMARA));
+
+        tableBuilder.withPool(podPool);
+    }
+
 
 });
 

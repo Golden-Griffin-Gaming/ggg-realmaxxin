@@ -2,6 +2,7 @@ package ca.goldengriffingaming.treet.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import java.io.IOException;
 
 public class GggTreetDataGenerator implements DataGeneratorEntrypoint {
 
@@ -11,5 +12,6 @@ public class GggTreetDataGenerator implements DataGeneratorEntrypoint {
 
 pack.addProvider(GggTreetBlockLootTableProvider::new);
 pack.addProvider(GggTreetModelProvider::new);
+pack.addProvider(GggTreetEnglishLangProvider::new);
     }
 }

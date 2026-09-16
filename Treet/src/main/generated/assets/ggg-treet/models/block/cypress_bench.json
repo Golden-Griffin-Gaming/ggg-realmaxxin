@@ -1,0 +1,6 @@
+{
+  "parent": "ggg-treet:block/furniture/wooden_bench",
+  "textures": {
+    "planks": "ggg-treet:block/cypress_planks"
+  }
+}

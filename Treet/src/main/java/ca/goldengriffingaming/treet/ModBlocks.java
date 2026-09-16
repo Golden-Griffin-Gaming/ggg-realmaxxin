@@ -35,6 +35,13 @@ import net.minecraft.world.level.block.CeilingHangingSignBlock;
 import net.minecraft.world.level.block.WallHangingSignBlock;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.level.block.ShelfBlock;
+import ca.goldengriffingaming.treet.block.BenchBlock;
+import ca.goldengriffingaming.treet.block.PicnicTableBlock;
+import ca.goldengriffingaming.treet.furniture.FurnitureWood;
+import ca.goldengriffingaming.treet.furniture.FurnitureWoods;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import java.util.function.Function;
 
@@ -173,8 +180,52 @@ public class ModBlocks {
         CYPRESS_HANGING_SIGN,
         CYPRESS_WALL_HANGING_SIGN
     );
+    public static final Map<FurnitureWood, Block> BENCHES = registerBenches();
 
-    private static Block register(
+public static final Block CYPRESS_BENCH =
+        BENCHES.get(FurnitureWoods.CYPRESS);
+
+public static final Map<FurnitureWood, Block> PICNIC_TABLES =
+        registerPicnicTables();
+
+public static final Block CYPRESS_PICNIC_TABLE =
+        PICNIC_TABLES.get(FurnitureWoods.CYPRESS);
+
+private static Map<FurnitureWood, Block> registerBenches() {
+    Map<FurnitureWood, Block> benches = new LinkedHashMap<>();
+
+    for (FurnitureWood wood : FurnitureWoods.ALL) {
+        Block bench = register(
+                wood.id() + "_bench",
+                BenchBlock::new,
+                BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+                        .noOcclusion(),
+                true
+        );
+
+        benches.put(wood, bench);
+    }
+
+    return benches;
+}
+    private static Map<FurnitureWood, Block> registerPicnicTables() {
+    Map<FurnitureWood, Block> picnicTables = new LinkedHashMap<>();
+
+    for (FurnitureWood wood : FurnitureWoods.ALL) {
+        Block picnicTable = register(
+                wood.id() + "_picnic_table",
+                PicnicTableBlock::new,
+                BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+                        .noOcclusion(),
+                true
+        );
+
+        picnicTables.put(wood, picnicTable);
+    }
+
+    return picnicTables;
+}
+private static Block register(
             String name,
             Function<BlockBehaviour.Properties, Block> blockFactory,
             BlockBehaviour.Properties properties,
@@ -281,28 +332,37 @@ public class ModBlocks {
         StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
         StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
             CreativeModeTabEvents
-                    .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
-                    .register(entries -> {
-                        entries.insertAfter(
-        Blocks.PALE_OAK_BUTTON.asItem(),
+        .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
+        .register(entries -> {
 
-        CYPRESS_LOG.asItem(),
-        CYPRESS_WOOD.asItem(),
-        STRIPPED_CYPRESS_LOG.asItem(),
-        STRIPPED_CYPRESS_WOOD.asItem(),
-        CYPRESS_PLANKS.asItem(),
-        CYPRESS_SHELF.asItem(),
-        CYPRESS_STAIRS.asItem(),
-        CYPRESS_SLAB.asItem(),
-        CYPRESS_FENCE.asItem(),
-        CYPRESS_FENCE_GATE.asItem(),
-        CYPRESS_DOOR.asItem(),
-        CYPRESS_TRAPDOOR.asItem(),
-        CYPRESS_PRESSURE_PLATE.asItem(),
-        CYPRESS_BUTTON.asItem(),
-        CYPRESS_SIGN_ITEM,
-        CYPRESS_HANGING_SIGN_ITEM
-);
-                     });
+            entries.insertAfter(
+                    Blocks.PALE_OAK_BUTTON.asItem(),
+
+                    CYPRESS_LOG.asItem(),
+                    CYPRESS_WOOD.asItem(),
+                    STRIPPED_CYPRESS_LOG.asItem(),
+                    STRIPPED_CYPRESS_WOOD.asItem(),
+                    CYPRESS_PLANKS.asItem(),
+                    CYPRESS_SHELF.asItem(),
+
+                    CYPRESS_STAIRS.asItem(),
+                    CYPRESS_SLAB.asItem(),
+                    CYPRESS_FENCE.asItem(),
+                    CYPRESS_FENCE_GATE.asItem(),
+                    CYPRESS_DOOR.asItem(),
+                    CYPRESS_TRAPDOOR.asItem(),
+                    CYPRESS_PRESSURE_PLATE.asItem(),
+                    CYPRESS_BUTTON.asItem(),
+                    CYPRESS_SIGN_ITEM,
+                    CYPRESS_HANGING_SIGN_ITEM
+            );
+
+            for (Block bench : BENCHES.values()) {
+                entries.accept(bench.asItem());
+            }
+            for (Block picnicTable : PICNIC_TABLES.values()) {
+                entries.accept(picnicTable.asItem());
+}
+        });
     }
 }

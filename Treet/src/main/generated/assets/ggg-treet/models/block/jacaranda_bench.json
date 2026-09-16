@@ -1,0 +1,6 @@
+{
+  "parent": "ggg-treet:block/furniture/wooden_bench",
+  "textures": {
+    "planks": "biomesoplenty:block/jacaranda_planks"
+  }
+}
