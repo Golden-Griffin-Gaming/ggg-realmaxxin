@@ -169,6 +169,20 @@ public class ModItems {
         new Item.Properties()
     );
 
+    // --- JURUPA OAK ITEMS ---
+
+    public static final Item JURUPA_OAK_ACORN = register(
+        "jurupa_oak_acorn",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item JURUPA_OAK_SEEDLING = register(
+        "jurupa_oak_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
     public static <T extends Item> T register(
             String name,
             Function<Item.Properties, T> itemFactory,
@@ -220,6 +234,8 @@ public class ModItems {
                 entries.accept(WILLOW_SEEDLING);
                 entries.accept(RED_MAPLE_SAMARA);
                 entries.accept(RED_MAPLE_SEEDLING);
+                entries.accept(JURUPA_OAK_ACORN);
+                entries.accept(JURUPA_OAK_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

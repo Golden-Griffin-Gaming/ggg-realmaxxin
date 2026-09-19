@@ -3,6 +3,7 @@ package ca.goldengriffingaming.treet;
 import ca.goldengriffingaming.treet.worldgen.EasternWhitePineFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.WeepingWillowFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.RedMapleFoliagePlacer;
+import ca.goldengriffingaming.treet.worldgen.JurupaOakFoliagePlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -35,7 +36,17 @@ public class ModFoliagePlacers {
                 new FoliagePlacerType<>(
                         RedMapleFoliagePlacer.CODEC
                 )
-        );
+            );
+
+
+    public static final FoliagePlacerType<JurupaOakFoliagePlacer>
+            JURUPA_OAK = Registry.register(
+                    BuiltInRegistries.FOLIAGE_PLACER_TYPE,
+                    GggTreet.id("jurupa_oak_foliage_placer"),
+                    new FoliagePlacerType<>(
+                            JurupaOakFoliagePlacer.CODEC
+                    )
+            );
 
     public static void initialize() {
     }

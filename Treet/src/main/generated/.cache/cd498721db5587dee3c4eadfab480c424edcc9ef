@@ -32,6 +32,7 @@ b9f5f1dcc29f8dcd9f11a750f8e83a4e493e0d62 data/ggg-treet/loot_table/blocks/fir_be
 cbb659e9624700b194bc8d61f541a2230bd6f653 data/ggg-treet/loot_table/blocks/jacaranda_picnic_table.json
 6596fe4717924393eeb067fd63b685796973019c data/ggg-treet/loot_table/blocks/jungle_bench.json
 4d2c43f6f7d31873b0751ecb732e347862aafb3c data/ggg-treet/loot_table/blocks/jungle_picnic_table.json
+3bd016cc006762d0449e54ad9162a8c22dd4de4d data/ggg-treet/loot_table/blocks/jurupa_oak_log_knots.json
 8f1dd87bc1a6fd04a822449374bc942798754dd1 data/ggg-treet/loot_table/blocks/mahogany_bench.json
 5b2afaa73dfeeeea1f6d7d5c7b41a09f2d59a15d data/ggg-treet/loot_table/blocks/mahogany_picnic_table.json
 e8413262a9c0eb782f4e03cb57981c1e2cecc239 data/ggg-treet/loot_table/blocks/mangrove_bench.json
@@ -40,6 +41,8 @@ a82070d6b7430cab400d46f71b256091a0600fa2 data/ggg-treet/loot_table/blocks/mangro
 34b9a5c12a35d928be5317e27ccf54ec25690a2d data/ggg-treet/loot_table/blocks/maple_picnic_table.json
 8138ad3dfa21f41817514c59d09d8ee3aad1c0ff data/ggg-treet/loot_table/blocks/oak_bench.json
 79117775226a00cbbed266eee2504f895c6f0b19 data/ggg-treet/loot_table/blocks/oak_picnic_table.json
+fce469d4a8eaa506f3d19e1130067d4d7b7b18d7 data/ggg-treet/loot_table/blocks/origin_oak_bench.json
+7ac7a5e1e39057a5926b671a9a8d9fa914086218 data/ggg-treet/loot_table/blocks/origin_oak_picnic_table.json
 5e7bba9ef737515ea305fcf8cacaa287beb48d69 data/ggg-treet/loot_table/blocks/pale_oak_bench.json
 3b0e9df8d6b3bf37954f81cf40c86d5068d53084 data/ggg-treet/loot_table/blocks/pale_oak_picnic_table.json
 c06646dde532daf52829616f5835487230af3ccb data/ggg-treet/loot_table/blocks/pine_bench.json

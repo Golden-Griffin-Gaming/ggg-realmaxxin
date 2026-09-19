@@ -1,8 +1,10 @@
 {
   "item.ggg-treet.mahogany_seeds": "Honduran Mahogany Seeds",
   "item.ggg-treet.mahogany_seed_pod": "Honduran Mahogany Seed Pod",
+
   "item.ggg-treet.fir_seeds": "Douglas Fir Seeds",
   "item.ggg-treet.fir_cone": "Douglas Fir Cone",
+
   "block.ggg-treet.cypress_log": "Leyland Cypress Log",
   "block.ggg-treet.stripped_cypress_log": "Stripped Leyland Cypress Log",
   "block.ggg-treet.cypress_wood": "Leyland Cypress Wood",
@@ -24,12 +26,15 @@
   "item.ggg-treet.cypress_seed_pod": "Leyland Cypress Seed Pod",
   "item.ggg-treet.cypress_seeds": "Leyland Cypress Seeds",
   "item.ggg-treet.cypress_seedling": "Leyland Cypress Seedling",
+
   "item.ggg-treet.redwood_cone": "Coast Redwood Cone",
   "item.ggg-treet.redwood_seeds": "Coast Redwood Seeds",
   "item.ggg-treet.redwood_seedling": "Coast Redwood Seedling",
+
   "item.ggg-treet.jacaranda_seed_capsule": "Blue Jacaranda Seed Capsule",
   "item.ggg-treet.jacaranda_seeds": "Blue Jacaranda Seeds",
   "item.ggg-treet.jacaranda_seedling": "Blue Jacaranda Seedling",
+
   "block.biomesoplenty.pine_log": "Eastern White Pine Log",
   "block.biomesoplenty.pine_log_knots": "Eastern White Pine Knotted Log",
   "block.biomesoplenty.stripped_pine_log": "Stripped Eastern White Pine Log",
@@ -51,12 +56,37 @@
   "entity.biomesoplenty.pine_boat": "Eastern White Pine Boat",
   "entity.biomesoplenty.pine_chest_boat": "Eastern White Pine Chest Boat",
   "item.ggg-treet.pine_leaves": "Eastern White Pine Leaves",
+
   "item.ggg-treet.willow_seeds": "Weeping Willow Seeds",
   "item.ggg-treet.willow_seedling": "Weeping Willow Seedling",
   "item.ggg-treet.willow_catkin": "Weeping Willow Catkin",
+
   "item.ggg-treet.red_maple_samara": "Red Maple Samara",
   "item.ggg-treet.red_maple_seedling": "Red Maple Seedling",
-  "block.ggg-treet.red_maple_sapling": "Red Maple Sapling"
+  "block.ggg-treet.red_maple_sapling": "Red Maple Sapling",
 
+  "block.biomesoplenty.origin_oak_sapling": "Jurupa Oak Sapling",
+  "item.ggg-treet.jurupa_oak_acorn": "Jurupa Oak Acorn",
+  "item.ggg-treet.jurupa_oak_seedling": "Jurupa Oak Seedling",
+  "block.biomesoplenty.origin_oak_log": "Jurupa Oak Log",
+  "block.ggg-treet.jurupa_oak_log_knots": "Jurupa Oak Knotted Log",
+  "block.biomesoplenty.stripped_origin_oak_log": "Stripped Jurupa Oak Log",
+  "block.biomesoplenty.origin_oak_wood": "Jurupa Oak Wood",
+  "block.biomesoplenty.stripped_origin_oak_wood": "Stripped Jurupa Oak Wood",
+  "block.biomesoplenty.origin_oak_planks": "Jurupa Oak Planks",
+  "block.biomesoplenty.origin_oak_slab": "Jurupa Oak Slab",
+  "block.biomesoplenty.origin_oak_stairs": "Jurupa Oak Stairs",
+  "block.biomesoplenty.origin_oak_fence": "Jurupa Oak Fence",
+  "block.biomesoplenty.origin_oak_fence_gate": "Jurupa Oak Fence Gate",
+  "block.biomesoplenty.origin_oak_button": "Jurupa Oak Button",
+  "block.biomesoplenty.origin_oak_pressure_plate": "Jurupa Oak Pressure Plate",
+  "block.biomesoplenty.origin_oak_door": "Jurupa Oak Door",
+  "block.biomesoplenty.origin_oak_trapdoor": "Jurupa Oak Trapdoor",
+  "block.biomesoplenty.origin_oak_sign": "Jurupa Oak Sign",
+  "block.biomesoplenty.origin_oak_hanging_sign": "Jurupa Oak Hanging Sign",
+  "block.biomesoplenty.origin_oak_shelf": "Jurupa Oak Shelf",
+  "entity.biomesoplenty.origin_oak_boat": "Jurupa Oak Boat",
+  "entity.biomesoplenty.origin_oak_chest_boat": "Jurupa Oak Chest Boat",
+  "item.ggg-treet.origin_oak_leaves": "Jurupa Oak Leaves"
 
 }

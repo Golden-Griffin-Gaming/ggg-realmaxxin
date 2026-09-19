@@ -91,6 +91,15 @@ public class GggTreet implements ModInitializer {
                 )
         );
 
+        private static final ResourceKey<LootTable> ORIGIN_OAK_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/origin_oak_leaves"
+                )
+        );
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -169,7 +178,15 @@ public class GggTreet implements ModInitializer {
 
         tableBuilder.withPool(podPool);
     }
+        if (ORIGIN_OAK_LEAVES_LOOT_TABLE.equals(key)) {
 
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.JURUPA_OAK_ACORN));
+
+        tableBuilder.withPool(podPool);
+    }
 
 });
 

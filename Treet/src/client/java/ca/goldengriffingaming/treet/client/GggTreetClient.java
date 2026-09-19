@@ -32,6 +32,12 @@ public class GggTreetClient implements ClientModInitializer {
         FallingLeavesParticle.CherryProvider::new
         );
 
+        ParticleProviderRegistry.getInstance().register(
+        ModParticles.JURUPA_OAK_LEAVES,
+        FallingLeavesParticle.CherryProvider::new
+        );
+
+
         ModelLayerRegistry.registerModelLayer(
                 ModModelLayers.CYPRESS_BOAT,
                 BoatModel::createBoatModel

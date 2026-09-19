@@ -2,6 +2,7 @@ package ca.goldengriffingaming.treet;
 
 import ca.goldengriffingaming.treet.worldgen.EasternWhitePineTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.WeepingWillowTrunkPlacer;
+import ca.goldengriffingaming.treet.worldgen.JurupaOakTrunkPlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -26,6 +27,15 @@ public class ModTrunkPlacers {
                             WeepingWillowTrunkPlacer.CODEC
                     )
             );
+
+    public static final TrunkPlacerType<JurupaOakTrunkPlacer>
+        JURUPA_OAK = Registry.register(
+                BuiltInRegistries.TRUNK_PLACER_TYPE,
+                GggTreet.id("jurupa_oak_trunk_placer"),
+                new TrunkPlacerType<>(
+                        JurupaOakTrunkPlacer.CODEC
+                )
+        );
 
     public static void initialize() {
     }

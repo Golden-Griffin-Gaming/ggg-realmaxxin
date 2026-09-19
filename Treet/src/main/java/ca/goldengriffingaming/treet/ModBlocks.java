@@ -56,6 +56,13 @@ public class ModBlocks {
                         BlockSetType.OAK
                 );
 
+    public static final Block JURUPA_OAK_LOG_KNOTS = register(
+            "jurupa_oak_log_knots",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+            true
+    );
+
     public static final Block CYPRESS_LOG = register(
             "cypress_log",
             RotatedPillarBlock::new,

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ggg-treet:block/jurupa_oak_log_knots_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ggg-treet:block/jurupa_oak_log_knots"
+    },
+    "axis=z": {
+      "model": "ggg-treet:block/jurupa_oak_log_knots_horizontal",
+      "x": 90
+    }
+  }
+}
