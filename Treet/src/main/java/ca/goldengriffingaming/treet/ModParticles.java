@@ -17,6 +17,9 @@ public class ModParticles {
     public static final SimpleParticleType JURUPA_OAK_LEAVES =
             register("jurupa_oak_leaves");
 
+    public static final SimpleParticleType PALM_LEAVES =
+            register("palm_leaves");
+
     private static SimpleParticleType register(String name) {
         return Registry.register(
                 BuiltInRegistries.PARTICLE_TYPE,

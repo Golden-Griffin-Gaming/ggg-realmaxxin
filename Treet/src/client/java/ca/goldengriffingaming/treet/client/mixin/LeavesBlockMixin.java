@@ -50,4 +50,43 @@ public abstract class LeavesBlockMixin {
             );
         }
     }
+
+        // Royal Palm: an occasional single leaflet, not a constant leaf shower.
+        
+@Inject(
+        method = "animateTick",
+        at = @At("HEAD"),
+        cancellable = true
+)
+private void gggTreet$replacePalmLeaves(
+        BlockState state,
+        Level level,
+        BlockPos pos,
+        RandomSource random,
+        CallbackInfo ci
+) {
+    Identifier blockId = BuiltInRegistries.BLOCK.getKey(
+            (Block) (Object) this
+    );
+
+    if (blockId.equals(
+            Identifier.fromNamespaceAndPath(
+                    "biomesoplenty",
+                    "palm_leaves"
+            )
+    )) {
+        // Rare Royal Palm falling leaflet
+        if (random.nextInt(1600) == 0) {
+            ParticleUtils.spawnParticleBelow(
+                    level,
+                    pos,
+                    random,
+                    ModParticles.PALM_LEAVES
+            );
+        }
+
+        // Prevent the inherited vanilla animation.
+        ci.cancel();
+    }
+}
 }

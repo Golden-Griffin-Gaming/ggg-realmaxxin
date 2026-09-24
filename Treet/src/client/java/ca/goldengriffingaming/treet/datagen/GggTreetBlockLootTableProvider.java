@@ -20,7 +20,9 @@ public class GggTreetBlockLootTableProvider extends FabricBlockLootSubProvider {
 
     @Override
     public void generate() {
-
+        
+        dropSelf(ModBlocks.PALM_LOG_JUNCTION);
+        dropSelf(ModBlocks.PALM_LOG_CROWNSHAFT);
         dropSelf(ModBlocks.JURUPA_OAK_LOG_KNOTS);
         dropSelf(ModBlocks.CYPRESS_LOG);
         dropSelf(ModBlocks.STRIPPED_CYPRESS_LOG);

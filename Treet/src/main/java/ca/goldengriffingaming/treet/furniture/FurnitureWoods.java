@@ -37,6 +37,9 @@ public final class FurnitureWoods {
     public static final FurnitureWood JURUPA_OAK =
         external("biomesoplenty", "origin_oak", "Jurupa Oak");
 
+    public static final FurnitureWood PALM =
+        external("biomesoplenty", "palm", "Royal Palm");
+
 
     public static final FurnitureWood OAK =
         vanilla("oak", "Oak");
@@ -130,6 +133,7 @@ private static FurnitureWood external(
         WILLOW,
         MAPLE,
         JURUPA_OAK,
+        PALM,
 
 //--- VANILLA ---//
 

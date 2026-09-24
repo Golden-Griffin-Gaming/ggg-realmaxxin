@@ -36,6 +36,8 @@ e273405d115098d77d518c741115f3bab9912f11 assets/ggg-treet/blockstates/maple_picn
 0092f188a957c7d848e21b02132ad8bd897583d4 assets/ggg-treet/blockstates/origin_oak_picnic_table.json
 c927c3a7d7a2894a9b6438db2c1eb52ae902f1e8 assets/ggg-treet/blockstates/pale_oak_bench.json
 b0202962e023a9769156a109020c7e81d4c378e3 assets/ggg-treet/blockstates/pale_oak_picnic_table.json
+342c9b8907a4529cc8ef91f31779dac73231f1da assets/ggg-treet/blockstates/palm_bench.json
+c00572d4565925d564b8974c7f2150d9fc323adc assets/ggg-treet/blockstates/palm_picnic_table.json
 d155d173c650c1b7665bc6c77291f35920a990fc assets/ggg-treet/blockstates/pine_bench.json
 921c9c7799cc6bf1a035b40f8076f5ab3c063575 assets/ggg-treet/blockstates/pine_picnic_table.json
 cc310a447eadea677f234fe35dff0fbd8946e5b4 assets/ggg-treet/blockstates/redwood_bench.json
@@ -83,6 +85,8 @@ f99ee184bc52591b0add366a5b9dc113cebe4641 assets/ggg-treet/items/oak_picnic_table
 9d898a3cceb9d889b443d5ed4ca768f2b2659563 assets/ggg-treet/items/origin_oak_picnic_table.json
 0abf950d69a670673854bc28817f63efc6aba757 assets/ggg-treet/items/pale_oak_bench.json
 239eaf3ff9a44271fb2a6c9e2c6641d95641f594 assets/ggg-treet/items/pale_oak_picnic_table.json
+9e001b184afddd1161e3c2d5e52f2db825d90d2d assets/ggg-treet/items/palm_bench.json
+274c63b3e87b79b9fe8c46c601dc42086a0fc855 assets/ggg-treet/items/palm_picnic_table.json
 6d660ee77c3aea6ef2b5d384d8161795b571ccd5 assets/ggg-treet/items/pine_bench.json
 7c0eb6ce5c6a9536607ca5d6db7b13ac36824d76 assets/ggg-treet/items/pine_picnic_table.json
 730ff04294047e271a541f297fbd727d802fbd3f assets/ggg-treet/items/redwood_bench.json
@@ -169,6 +173,10 @@ a5f3b5306cc767988da984b20cfd88cafe7b0c31 assets/ggg-treet/models/block/origin_oa
 6d4ae6bbeafb68ee995d0b6c7bb340dccbe21a94 assets/ggg-treet/models/block/pale_oak_bench_inventory.json
 50d59c93e71780e69b37d367cc7f4765714e660f assets/ggg-treet/models/block/pale_oak_picnic_table.json
 9edf57f53cb2de469b185de8d5fc0c7d2b90247e assets/ggg-treet/models/block/pale_oak_picnic_table_inventory.json
+159385fc7e2b1fa1abb0851599837b7f42108d3a assets/ggg-treet/models/block/palm_bench.json
+6d7c05095f0236344583a2a5f2d6f4611b3440fd assets/ggg-treet/models/block/palm_bench_inventory.json
+97434457d0fa76b6e592bbb6a8b422e9910b26be assets/ggg-treet/models/block/palm_picnic_table.json
+3c96ceccbdb1f6639e167352bbb10caf34e133e0 assets/ggg-treet/models/block/palm_picnic_table_inventory.json
 078f489721ac66951112eef36c5c38d59a0a7771 assets/ggg-treet/models/block/pine_bench.json
 2ddc4581c35a4c2bdda50190b3c929969d10048a assets/ggg-treet/models/block/pine_bench_inventory.json
 f5f35e31ae61433221df3b69724c5811f61ae825 assets/ggg-treet/models/block/pine_picnic_table.json

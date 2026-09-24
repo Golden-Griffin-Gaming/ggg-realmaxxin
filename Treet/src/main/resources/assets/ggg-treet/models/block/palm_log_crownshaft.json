@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ggg-treet:block/palm_log_crownshaft",
+    "side": "ggg-treet:block/palm_log_crownshaft"
+  }
+}

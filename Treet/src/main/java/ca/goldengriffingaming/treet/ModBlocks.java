@@ -187,6 +187,25 @@ public class ModBlocks {
         CYPRESS_HANGING_SIGN,
         CYPRESS_WALL_HANGING_SIGN
     );
+
+    
+    // --- ROYAL PALM BLOCKS ---
+
+    public static final Block PALM_LOG_JUNCTION = register(
+            "palm_log_junction",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+            true
+    );
+
+    public static final Block PALM_LOG_CROWNSHAFT = register(
+            "palm_log_crownshaft",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+            true
+    );
+
+
     public static final Map<FurnitureWood, Block> BENCHES = registerBenches();
 
 public static final Block CYPRESS_BENCH =

@@ -45,6 +45,10 @@ fce469d4a8eaa506f3d19e1130067d4d7b7b18d7 data/ggg-treet/loot_table/blocks/origin
 7ac7a5e1e39057a5926b671a9a8d9fa914086218 data/ggg-treet/loot_table/blocks/origin_oak_picnic_table.json
 5e7bba9ef737515ea305fcf8cacaa287beb48d69 data/ggg-treet/loot_table/blocks/pale_oak_bench.json
 3b0e9df8d6b3bf37954f81cf40c86d5068d53084 data/ggg-treet/loot_table/blocks/pale_oak_picnic_table.json
+3ba9d2273e64321a828dd8b98473f225ede449e8 data/ggg-treet/loot_table/blocks/palm_bench.json
+e59ed9534be58022e9c60163dd6797e5c25bb808 data/ggg-treet/loot_table/blocks/palm_log_crownshaft.json
+27c3402a8023689951c4e943ff5feb5a4873d7f2 data/ggg-treet/loot_table/blocks/palm_log_junction.json
+74440d7cb8b50608ca24b3f073838f5831d67225 data/ggg-treet/loot_table/blocks/palm_picnic_table.json
 c06646dde532daf52829616f5835487230af3ccb data/ggg-treet/loot_table/blocks/pine_bench.json
 7d598af5869feada6269826549db9c1cbeee54b8 data/ggg-treet/loot_table/blocks/pine_picnic_table.json
 0e758429744b115fbd19f7c855c3fcbe40bbc746 data/ggg-treet/loot_table/blocks/redwood_bench.json

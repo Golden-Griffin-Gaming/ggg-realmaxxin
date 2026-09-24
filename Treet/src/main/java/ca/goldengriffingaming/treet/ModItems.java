@@ -183,6 +183,26 @@ public class ModItems {
         new Item.Properties()
     );
 
+    // --- ROYAL PALM ITEMS ---
+
+    public static final Item PALM_SEED_CLUSTER = register(
+            "palm_seed_cluster",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final Item PALM_SEEDS = register(
+            "palm_seeds",
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final Item PALM_SEEDLING = register(
+            "palm_seedling",
+            Item::new,
+            new Item.Properties()
+    );
+
     public static <T extends Item> T register(
             String name,
             Function<Item.Properties, T> itemFactory,
@@ -236,6 +256,9 @@ public class ModItems {
                 entries.accept(RED_MAPLE_SEEDLING);
                 entries.accept(JURUPA_OAK_ACORN);
                 entries.accept(JURUPA_OAK_SEEDLING);
+                entries.accept(PALM_SEED_CLUSTER);
+                entries.accept(PALM_SEEDS);
+                entries.accept(PALM_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

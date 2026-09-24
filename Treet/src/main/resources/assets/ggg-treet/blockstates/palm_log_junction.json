@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ggg-treet:block/palm_log_junction_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ggg-treet:block/palm_log_junction"
+    },
+    "axis=z": {
+      "model": "ggg-treet:block/palm_log_junction_horizontal",
+      "x": 90
+    }
+  }
+}
