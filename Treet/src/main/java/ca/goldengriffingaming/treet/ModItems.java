@@ -203,6 +203,46 @@ public class ModItems {
             new Item.Properties()
     );
 
+    // --- DEMONSPUR HELLBLADE ITEMS ---
+
+    public static final Item HELLBLADE_SEED_POD = register(
+        "hellblade_seed_pod",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item HELLBLADE_SEEDS = register(
+        "hellblade_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item HELLBLADE_SEEDLING = register(
+        "hellblade_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
+        // --- GREY ARCANUM ITEMS ---
+
+    public static final Item GREY_ARCANUM_CONE = register(
+        "grey_arcanum_cone",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item GREY_ARCANUM_SEEDS = register(
+        "grey_arcanum_seeds",
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item GREY_ARCANUM_SEEDLING = register(
+        "grey_arcanum_seedling",
+        Item::new,
+        new Item.Properties()
+    );
+
     public static <T extends Item> T register(
             String name,
             Function<Item.Properties, T> itemFactory,
@@ -259,6 +299,12 @@ public class ModItems {
                 entries.accept(PALM_SEED_CLUSTER);
                 entries.accept(PALM_SEEDS);
                 entries.accept(PALM_SEEDLING);
+                entries.accept(HELLBLADE_SEED_POD);
+                entries.accept(HELLBLADE_SEEDS);
+                entries.accept(HELLBLADE_SEEDLING);
+                entries.accept(GREY_ARCANUM_CONE);
+                entries.accept(GREY_ARCANUM_SEEDS);
+                entries.accept(GREY_ARCANUM_SEEDLING);
             });
         CreativeModeTabEvents
             .modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

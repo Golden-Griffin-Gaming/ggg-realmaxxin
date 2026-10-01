@@ -4,6 +4,8 @@ import ca.goldengriffingaming.treet.worldgen.EasternWhitePineFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.WeepingWillowFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.RedMapleFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.JurupaOakFoliagePlacer;
+import ca.goldengriffingaming.treet.worldgen.DemonspurHellbladeFoliagePlacer;
+import ca.goldengriffingaming.treet.worldgen.GreyArcanumFoliagePlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -47,6 +49,24 @@ public class ModFoliagePlacers {
                             JurupaOakFoliagePlacer.CODEC
                     )
             );
+
+    public static final FoliagePlacerType<DemonspurHellbladeFoliagePlacer>
+        DEMONSPUR_HELLBLADE = Registry.register(
+                BuiltInRegistries.FOLIAGE_PLACER_TYPE,
+                GggTreet.id("demonspur_hellblade_foliage_placer"),
+                new FoliagePlacerType<>(
+                        DemonspurHellbladeFoliagePlacer.CODEC
+                )
+        );
+
+    public static final FoliagePlacerType<GreyArcanumFoliagePlacer>
+        GREY_ARCANUM = Registry.register(
+                BuiltInRegistries.FOLIAGE_PLACER_TYPE,
+                GggTreet.id("grey_arcanum_foliage_placer"),
+                new FoliagePlacerType<>(
+                        GreyArcanumFoliagePlacer.CODEC
+                )
+        );
 
     public static void initialize() {
     }

@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "below_trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "decorators": [],
+    "foliage_placer": {
+      "type": "ggg-treet:demonspur_hellblade_foliage_placer",
+      "radius": 4,
+      "offset": 0
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "biomesoplenty:hellbark_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size"
+    },
+    "trunk_placer": {
+      "type": "ggg-treet:demonspur_hellblade_trunk_placer",
+      "base_height": 8,
+      "height_rand_a": 2,
+      "height_rand_b": 1
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "biomesoplenty:hellbark_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

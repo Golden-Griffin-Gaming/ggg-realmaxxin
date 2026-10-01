@@ -1,0 +1,6 @@
+{
+  "parent": "ggg-treet:block/furniture/picnic_table_inventory",
+  "textures": {
+    "planks": "biomesoplenty:block/magic_planks"
+  }
+}

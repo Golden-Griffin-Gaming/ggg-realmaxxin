@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "ggg-treet:grey_arcanum_cone"
+  ],
+  "result": {
+    "id": "ggg-treet:grey_arcanum_seeds",
+    "count": 5
+  }
+}

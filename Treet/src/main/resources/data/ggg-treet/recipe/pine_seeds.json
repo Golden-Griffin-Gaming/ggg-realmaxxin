@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "ggg-treet:pine_cone"
+  ],
+  "result": {
+    "id": "ggg-treet:pine_seeds",
+    "count": 7
+  }
+}

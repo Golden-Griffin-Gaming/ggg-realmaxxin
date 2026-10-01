@@ -100,6 +100,33 @@ public class GggTreet implements ModInitializer {
                 )
         );
 
+        private static final ResourceKey<LootTable> PALM_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/palm_leaves"
+                )
+        );
+
+                private static final ResourceKey<LootTable> HELLBARK_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(
+                        "biomesoplenty",
+                        "blocks/hellbark_leaves"
+                )
+        );
+
+        private static final ResourceKey<LootTable> MAGIC_LEAVES_LOOT_TABLE =
+        ResourceKey.create(
+                Registries.LOOT_TABLE,
+                Identifier.fromNamespaceAndPath(    
+                        "biomesoplenty",
+                        "blocks/magic_leaves"
+                )
+        );
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -185,6 +212,36 @@ public class GggTreet implements ModInitializer {
                 .setRolls(ConstantValue.exactly(1.0F))
                 .when(LootItemRandomChanceCondition.randomChance(0.02F))
                 .add(LootItem.lootTableItem(ModItems.JURUPA_OAK_ACORN));
+
+        tableBuilder.withPool(podPool);
+    }
+
+    if (PALM_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.PALM_SEED_CLUSTER));
+
+        tableBuilder.withPool(podPool);
+    }
+
+    if (HELLBARK_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.HELLBLADE_SEED_POD));
+
+        tableBuilder.withPool(podPool);
+    }
+
+    if (MAGIC_LEAVES_LOOT_TABLE.equals(key)) {
+
+        LootPool.Builder podPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(LootItemRandomChanceCondition.randomChance(0.02F))
+                .add(LootItem.lootTableItem(ModItems.GREY_ARCANUM_CONE));
 
         tableBuilder.withPool(podPool);
     }

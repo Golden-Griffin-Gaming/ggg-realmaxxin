@@ -40,6 +40,12 @@ public final class FurnitureWoods {
     public static final FurnitureWood PALM =
         external("biomesoplenty", "palm", "Royal Palm");
 
+    public static final FurnitureWood HELLBLADE =
+        external("biomesoplenty", "hellbark", "Demonspur Hellblade");
+
+    public static final FurnitureWood GREY_ARCANUM =
+        external("biomesoplenty", "magic", "Grey Arcanum");
+
 
     public static final FurnitureWood OAK =
         vanilla("oak", "Oak");
@@ -134,6 +140,8 @@ private static FurnitureWood external(
         MAPLE,
         JURUPA_OAK,
         PALM,
+        HELLBLADE,
+        GREY_ARCANUM,
 
 //--- VANILLA ---//
 

@@ -3,6 +3,8 @@ package ca.goldengriffingaming.treet;
 import ca.goldengriffingaming.treet.worldgen.EasternWhitePineTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.WeepingWillowTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.JurupaOakTrunkPlacer;
+import ca.goldengriffingaming.treet.worldgen.DemonspurHellbladeTrunkPlacer;
+import ca.goldengriffingaming.treet.worldgen.GreyArcanumTrunkPlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -34,6 +36,24 @@ public class ModTrunkPlacers {
                 GggTreet.id("jurupa_oak_trunk_placer"),
                 new TrunkPlacerType<>(
                         JurupaOakTrunkPlacer.CODEC
+                )
+        );
+
+    public static final TrunkPlacerType<DemonspurHellbladeTrunkPlacer>
+        DEMONSPUR_HELLBLADE = Registry.register(
+                BuiltInRegistries.TRUNK_PLACER_TYPE,
+                GggTreet.id("demonspur_hellblade_trunk_placer"),
+                new TrunkPlacerType<>(
+                        DemonspurHellbladeTrunkPlacer.CODEC
+                )
+        );
+
+    public static final TrunkPlacerType<GreyArcanumTrunkPlacer>
+        GREY_ARCANUM = Registry.register(
+                BuiltInRegistries.TRUNK_PLACER_TYPE,
+                GggTreet.id("grey_arcanum_trunk_placer"),
+                new TrunkPlacerType<>(
+                        GreyArcanumTrunkPlacer.CODEC
                 )
         );
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ggg-treet:item/cypress_seeds"
+  }
+}
