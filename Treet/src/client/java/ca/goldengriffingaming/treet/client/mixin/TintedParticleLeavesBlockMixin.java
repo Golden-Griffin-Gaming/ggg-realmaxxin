@@ -65,6 +65,21 @@ public abstract class TintedParticleLeavesBlockMixin {
 
             ci.cancel();
         }
-        
+
+        else if (blockId.equals(
+            Identifier.fromNamespaceAndPath(
+                    "biomesoplenty",
+                    "empyreal_leaves"
+            )
+        )) {
+            ParticleUtils.spawnParticleBelow(
+                    level,
+                    pos,
+                    random,
+                    ModParticles.GOLDEN_ETHEREAL_LEAVES
+            );
+
+            ci.cancel();
+        }        
     }
 }

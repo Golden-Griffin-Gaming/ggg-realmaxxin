@@ -20,6 +20,9 @@ public class ModParticles {
     public static final SimpleParticleType PALM_LEAVES =
             register("palm_leaves");
 
+    public static final SimpleParticleType GOLDEN_ETHEREAL_LEAVES =
+        register("golden_ethereal_leaves");
+
     private static SimpleParticleType register(String name) {
         return Registry.register(
                 BuiltInRegistries.PARTICLE_TYPE,

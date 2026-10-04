@@ -294,6 +294,33 @@
   "item.ggg-treet.grey_arcanum_cone": "Grey Arcanum Cone",
   "item.ggg-treet.grey_arcanum_seeds": "Grey Arcanum Seeds",
   "item.ggg-treet.grey_arcanum_seedling": "Grey Arcanum Seedling",
-  "block.biomesoplenty.magic_sapling": "Grey Arcanum Sapling"
+  "block.biomesoplenty.magic_sapling": "Grey Arcanum Sapling",
+
+  "block.biomesoplenty.empyreal_log": "Golden Ethereal Log",
+  "block.biomesoplenty.stripped_empyreal_log": "Stripped Golden Ethereal Log",
+  "block.biomesoplenty.empyreal_wood": "Golden Ethereal Wood",
+  "block.biomesoplenty.stripped_empyreal_wood": "Stripped Golden Ethereal Wood",
+  "block.biomesoplenty.empyreal_planks": "Golden Ethereal Planks",
+  "block.biomesoplenty.empyreal_slab": "Golden Ethereal Slab",
+  "block.biomesoplenty.empyreal_stairs": "Golden Ethereal Stairs",
+  "block.biomesoplenty.empyreal_fence": "Golden Ethereal Fence",
+  "block.biomesoplenty.empyreal_fence_gate": "Golden Ethereal Fence Gate",
+  "block.biomesoplenty.empyreal_button": "Golden Ethereal Button",
+  "block.biomesoplenty.empyreal_pressure_plate": "Golden Ethereal Pressure Plate",
+  "block.biomesoplenty.empyreal_door": "Golden Ethereal Door",
+  "block.biomesoplenty.empyreal_trapdoor": "Golden Ethereal Trapdoor",
+  "block.biomesoplenty.empyreal_sign": "Golden Ethereal Sign",
+  "block.biomesoplenty.empyreal_hanging_sign": "Golden Ethereal Hanging Sign",
+  "block.biomesoplenty.empyreal_shelf": "Golden Ethereal Shelf",
+  "entity.biomesoplenty.empyreal_boat": "Golden Ethereal Boat",
+  "entity.biomesoplenty.empyreal_chest_boat": "Golden Ethereal Chest Boat",
+  "item.biomesoplenty.empyreal_boat": "Golden Ethereal Boat",
+  "item.biomesoplenty.empyreal_chest_boat": "Golden Ethereal Chest Boat",
+  "block.biomesoplenty.empyreal_leaves": "Golden Ethereal Leaves",
+  "item.ggg-treet.golden_ethereal_samara": "Golden Ethereal Samara",
+  "item.ggg-treet.golden_ethereal_seedling": "Golden Ethereal Seedling",
+  "block.biomesoplenty.empyreal_sapling": "Golden Ethereal Sapling"
+
+
 
 }

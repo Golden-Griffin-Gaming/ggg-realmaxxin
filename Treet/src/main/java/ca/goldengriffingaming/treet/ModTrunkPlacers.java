@@ -5,6 +5,7 @@ import ca.goldengriffingaming.treet.worldgen.WeepingWillowTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.JurupaOakTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.DemonspurHellbladeTrunkPlacer;
 import ca.goldengriffingaming.treet.worldgen.GreyArcanumTrunkPlacer;
+import ca.goldengriffingaming.treet.worldgen.GoldenEtherealTrunkPlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -54,6 +55,15 @@ public class ModTrunkPlacers {
                 GggTreet.id("grey_arcanum_trunk_placer"),
                 new TrunkPlacerType<>(
                         GreyArcanumTrunkPlacer.CODEC
+                )
+        );
+
+    public static final TrunkPlacerType<GoldenEtherealTrunkPlacer>
+        GOLDEN_ETHEREAL = Registry.register(
+                BuiltInRegistries.TRUNK_PLACER_TYPE,
+                GggTreet.id("golden_ethereal_trunk_placer"),
+                new TrunkPlacerType<>(
+                        GoldenEtherealTrunkPlacer.CODEC
                 )
         );
 

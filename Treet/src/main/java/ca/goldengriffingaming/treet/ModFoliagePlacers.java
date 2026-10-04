@@ -6,6 +6,7 @@ import ca.goldengriffingaming.treet.worldgen.RedMapleFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.JurupaOakFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.DemonspurHellbladeFoliagePlacer;
 import ca.goldengriffingaming.treet.worldgen.GreyArcanumFoliagePlacer;
+import ca.goldengriffingaming.treet.worldgen.GoldenEtherealFoliagePlacer;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -65,6 +66,15 @@ public class ModFoliagePlacers {
                 GggTreet.id("grey_arcanum_foliage_placer"),
                 new FoliagePlacerType<>(
                         GreyArcanumFoliagePlacer.CODEC
+                )
+        );
+
+    public static final FoliagePlacerType<GoldenEtherealFoliagePlacer>
+        GOLDEN_ETHEREAL = Registry.register(
+                BuiltInRegistries.FOLIAGE_PLACER_TYPE,
+                GggTreet.id("golden_ethereal_foliage_placer"),
+                new FoliagePlacerType<>(
+                        GoldenEtherealFoliagePlacer.CODEC
                 )
         );
 

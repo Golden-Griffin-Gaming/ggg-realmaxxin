@@ -35,20 +35,20 @@ public abstract class LeavesBlockMixin {
                 (Block) (Object) this
         );
 
-        if (blockId.equals(
-                Identifier.fromNamespaceAndPath(
-                        "biomesoplenty",
-                        "origin_oak_leaves"
-                )
-        ) && random.nextInt(100) == 0) {
+       if (blockId.equals(
+        Identifier.fromNamespaceAndPath(
+                "biomesoplenty",
+                "origin_oak_leaves"
+        )
+) && random.nextInt(100) == 0) {
 
-            ParticleUtils.spawnParticleBelow(
-                    level,
-                    pos,
-                    random,
-                    ModParticles.JURUPA_OAK_LEAVES
-            );
-        }
+    ParticleUtils.spawnParticleBelow(
+            level,
+            pos,
+            random,
+            ModParticles.JURUPA_OAK_LEAVES
+    );
+}
     }
 
         // Royal Palm: an occasional single leaflet, not a constant leaf shower.
@@ -86,6 +86,41 @@ private void gggTreet$replacePalmLeaves(
         }
 
         // Prevent the inherited vanilla animation.
+        ci.cancel();
+    }
+}
+@Inject(
+        method = "animateTick",
+        at = @At("HEAD"),
+        cancellable = true
+)
+private void gggTreet$replaceGoldenEtherealLeaves(
+        BlockState state,
+        Level level,
+        BlockPos pos,
+        RandomSource random,
+        CallbackInfo ci
+) {
+    Identifier blockId = BuiltInRegistries.BLOCK.getKey(
+            (Block) (Object) this
+    );
+
+    if (blockId.equals(
+            Identifier.fromNamespaceAndPath(
+                    "biomesoplenty",
+                    "empyreal_leaves"
+            )
+    )) {
+        if (random.nextInt(100) == 0) {
+            ParticleUtils.spawnParticleBelow(
+                    level,
+                    pos,
+                    random,
+                    ModParticles.GOLDEN_ETHEREAL_LEAVES
+            );
+        }
+
+        // Prevent the inherited/default falling leaf animation.
         ci.cancel();
     }
 }
