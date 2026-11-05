@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=1": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=2": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=3": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=4": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=5": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=6": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    },
+    "moisture=7": {
+      "model": "ggg-dirtydeeds:block/farmland"
+    }
+  }
+}

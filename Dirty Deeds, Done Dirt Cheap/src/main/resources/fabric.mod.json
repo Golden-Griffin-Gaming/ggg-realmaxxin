@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ggg-dirtydeeds",
+	"version": "${version}",
+	"name": "Dirty Deeds, Done Dirt Cheap",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ggg-dirtydeeds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ca.goldengriffingaming.realmaxxin.dirtydeeds.DirtyDeedsDoneDirtCheap"
+		],
+		"client": [
+			"ca.goldengriffingaming.realmaxxin.dirtydeeds.client.DirtyDeedsClient"
+		],
+		"fabric-datagen": [
+			"ca.goldengriffingaming.realmaxxin.dirtydeeds.client.DirtyDeedsDoneDirtCheapDataGenerator"
+		]
+	},
+	"mixins": [
+		"ggg-dirtydeeds.mixins.json",
+		{
+			"config": "ggg-dirtydeeds.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

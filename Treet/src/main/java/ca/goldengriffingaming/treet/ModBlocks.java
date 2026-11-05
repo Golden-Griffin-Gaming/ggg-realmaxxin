@@ -205,17 +205,164 @@ public class ModBlocks {
             true
     );
 
+    // --- CROWN ZOMBIBARK BLOCKS ---
+
+    public static final WoodType CROWN_ZOMBIBARK_WOOD_TYPE =
+        WoodTypeBuilder.copyOf(WoodType.OAK)
+                .register(
+                        Identifier.fromNamespaceAndPath(GggTreet.MOD_ID, "treet_crown_zombibark"),
+                        BlockSetType.OAK
+                );
+
+    public static final Block CROWN_ZOMBIBARK_LOG_DECAYED = register(
+            "crown_zombibark_log_decayed",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+            true
+    );
+
+    public static final Block CROWN_ZOMBIBARK_LOG = register(
+            "crown_zombibark_log",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG),
+            true
+    );
+
+    public static final Block STRIPPED_CROWN_ZOMBIBARK_LOG = register(
+        "stripped_crown_zombibark_log",
+        RotatedPillarBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_WOOD = register(
+        "crown_zombibark_wood",
+        RotatedPillarBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD),
+        true
+    );
+
+    public static final Block STRIPPED_CROWN_ZOMBIBARK_WOOD = register(
+        "stripped_crown_zombibark_wood",
+        RotatedPillarBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD),
+        true
+    );
+
+    public static final Block CROWN_ZOMBIBARK_PLANKS = register(
+        "crown_zombibark_planks",
+        Block::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_SHELF = register(
+        "crown_zombibark_shelf",
+        ShelfBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SHELF),
+        true
+    );
+
+    public static final Block CROWN_ZOMBIBARK_SLAB = register(
+        "crown_zombibark_slab",
+        SlabBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_STAIRS = register(
+        "crown_zombibark_stairs",
+        properties -> new StairBlock(CROWN_ZOMBIBARK_PLANKS.defaultBlockState(), properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_FENCE = register(
+        "crown_zombibark_fence",
+        FenceBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_FENCE_GATE = register(
+        "crown_zombibark_fence_gate",
+        properties -> new FenceGateBlock(CROWN_ZOMBIBARK_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_BUTTON = register(
+        "crown_zombibark_button",
+        properties -> new ButtonBlock(BlockSetType.OAK, 30, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_PRESSURE_PLATE = register(
+        "crown_zombibark_pressure_plate",
+        properties -> new PressurePlateBlock(BlockSetType.OAK, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_DOOR = register(
+        "crown_zombibark_door",
+        properties -> new DoorBlock(BlockSetType.OAK, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR),
+        true
+    );
+
+    public static final Block CROWN_ZOMBIBARK_TRAPDOOR = register(
+        "crown_zombibark_trapdoor",
+        properties -> new TrapDoorBlock(BlockSetType.OAK, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR),
+        true
+    );
+    public static final Block CROWN_ZOMBIBARK_SIGN = register(
+        "crown_zombibark_sign",
+        properties -> new StandingSignBlock(CROWN_ZOMBIBARK_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN),
+        false
+    );
+
+    public static final Block CROWN_ZOMBIBARK_WALL_SIGN = register(
+        "crown_zombibark_wall_sign",
+        properties -> new WallSignBlock(CROWN_ZOMBIBARK_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN),
+        false
+    );
+    public static final Item CROWN_ZOMBIBARK_SIGN_ITEM = registerSignItem(
+        "crown_zombibark_sign",
+        CROWN_ZOMBIBARK_SIGN,
+        CROWN_ZOMBIBARK_WALL_SIGN
+    );
+    public static final Block CROWN_ZOMBIBARK_HANGING_SIGN = register(
+        "crown_zombibark_hanging_sign",
+        properties -> new CeilingHangingSignBlock(CROWN_ZOMBIBARK_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN),
+        false
+    );
+    public static final Block CROWN_ZOMBIBARK_WALL_HANGING_SIGN = register(
+        "crown_zombibark_wall_hanging_sign",
+        properties -> new WallHangingSignBlock(CROWN_ZOMBIBARK_WOOD_TYPE, properties),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN),
+        false
+    );
+    public static final Item CROWN_ZOMBIBARK_HANGING_SIGN_ITEM = registerHangingSignItem(
+        "crown_zombibark_hanging_sign",
+        CROWN_ZOMBIBARK_HANGING_SIGN,
+        CROWN_ZOMBIBARK_WALL_HANGING_SIGN   
+    );
+
 
     public static final Map<FurnitureWood, Block> BENCHES = registerBenches();
 
 public static final Block CYPRESS_BENCH =
         BENCHES.get(FurnitureWoods.CYPRESS);
 
+public static final Block CROWN_ZOMBIBARK_BENCH =
+        BENCHES.get(FurnitureWoods.CROWN_ZOMBIBARK);
+
 public static final Map<FurnitureWood, Block> PICNIC_TABLES =
         registerPicnicTables();
 
 public static final Block CYPRESS_PICNIC_TABLE =
         PICNIC_TABLES.get(FurnitureWoods.CYPRESS);
+
+public static final Block CROWN_ZOMBIBARK_PICNIC_TABLE =
+        PICNIC_TABLES.get(FurnitureWoods.CROWN_ZOMBIBARK);
 
 private static Map<FurnitureWood, Block> registerBenches() {
     Map<FurnitureWood, Block> benches = new LinkedHashMap<>();
@@ -346,49 +493,83 @@ private static Block register(
         );
     }
 
-    public static void initialize() {
+    
+public static void initialize() {
 
     // --- CYPRESS BLOCKS ---
+    ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_WALL_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_HANGING_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_WALL_HANGING_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.SHELF).addValidBlock(CYPRESS_SHELF);
 
-        ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_SIGN);
-        ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CYPRESS_WALL_SIGN);
-        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_HANGING_SIGN);
-        ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CYPRESS_WALL_HANGING_SIGN);
-        ((FabricBlockEntityType) BlockEntityType.SHELF).addValidBlock(CYPRESS_SHELF);
-        StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
-        StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
-            CreativeModeTabEvents
+    StrippableBlockRegistry.register(CYPRESS_LOG, STRIPPED_CYPRESS_LOG);
+    StrippableBlockRegistry.register(CYPRESS_WOOD, STRIPPED_CYPRESS_WOOD);
+
+    // --- CROWN ZOMBIBARK BLOCKS ---
+    ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CROWN_ZOMBIBARK_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.SIGN).addValidBlock(CROWN_ZOMBIBARK_WALL_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CROWN_ZOMBIBARK_HANGING_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.HANGING_SIGN).addValidBlock(CROWN_ZOMBIBARK_WALL_HANGING_SIGN);
+    ((FabricBlockEntityType) BlockEntityType.SHELF).addValidBlock(CROWN_ZOMBIBARK_SHELF);
+
+    StrippableBlockRegistry.register(CROWN_ZOMBIBARK_LOG, STRIPPED_CROWN_ZOMBIBARK_LOG);
+    StrippableBlockRegistry.register(CROWN_ZOMBIBARK_LOG_DECAYED, STRIPPED_CROWN_ZOMBIBARK_LOG);
+    StrippableBlockRegistry.register(CROWN_ZOMBIBARK_WOOD, STRIPPED_CROWN_ZOMBIBARK_WOOD);
+
+    // --- CREATIVE INVENTORY ---
+    CreativeModeTabEvents
         .modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
         .register(entries -> {
 
             entries.insertAfter(
-                    Blocks.PALE_OAK_BUTTON.asItem(),
+                Blocks.CHERRY_BUTTON.asItem(),
+                CYPRESS_LOG.asItem(),
+                CYPRESS_WOOD.asItem(),
+                STRIPPED_CYPRESS_LOG.asItem(),
+                STRIPPED_CYPRESS_WOOD.asItem(),
+                CYPRESS_PLANKS.asItem(),
+                CYPRESS_SHELF.asItem(),
+                CYPRESS_STAIRS.asItem(),
+                CYPRESS_SLAB.asItem(),
+                CYPRESS_FENCE.asItem(),
+                CYPRESS_FENCE_GATE.asItem(),
+                CYPRESS_DOOR.asItem(),
+                CYPRESS_TRAPDOOR.asItem(),
+                CYPRESS_PRESSURE_PLATE.asItem(),
+                CYPRESS_BUTTON.asItem(),
+                CYPRESS_SIGN_ITEM,
+                CYPRESS_HANGING_SIGN_ITEM
+            );
 
-                    CYPRESS_LOG.asItem(),
-                    CYPRESS_WOOD.asItem(),
-                    STRIPPED_CYPRESS_LOG.asItem(),
-                    STRIPPED_CYPRESS_WOOD.asItem(),
-                    CYPRESS_PLANKS.asItem(),
-                    CYPRESS_SHELF.asItem(),
-
-                    CYPRESS_STAIRS.asItem(),
-                    CYPRESS_SLAB.asItem(),
-                    CYPRESS_FENCE.asItem(),
-                    CYPRESS_FENCE_GATE.asItem(),
-                    CYPRESS_DOOR.asItem(),
-                    CYPRESS_TRAPDOOR.asItem(),
-                    CYPRESS_PRESSURE_PLATE.asItem(),
-                    CYPRESS_BUTTON.asItem(),
-                    CYPRESS_SIGN_ITEM,
-                    CYPRESS_HANGING_SIGN_ITEM
+            entries.insertAfter(
+                Blocks.CHERRY_BUTTON.asItem(),
+                CROWN_ZOMBIBARK_LOG.asItem(),
+                CROWN_ZOMBIBARK_LOG_DECAYED.asItem(),
+                CROWN_ZOMBIBARK_WOOD.asItem(),
+                STRIPPED_CROWN_ZOMBIBARK_LOG.asItem(),
+                STRIPPED_CROWN_ZOMBIBARK_WOOD.asItem(),
+                CROWN_ZOMBIBARK_PLANKS.asItem(),
+                CROWN_ZOMBIBARK_SHELF.asItem(),
+                CROWN_ZOMBIBARK_STAIRS.asItem(),
+                CROWN_ZOMBIBARK_SLAB.asItem(),
+                CROWN_ZOMBIBARK_FENCE.asItem(),
+                CROWN_ZOMBIBARK_FENCE_GATE.asItem(),
+                CROWN_ZOMBIBARK_DOOR.asItem(),
+                CROWN_ZOMBIBARK_TRAPDOOR.asItem(),
+                CROWN_ZOMBIBARK_PRESSURE_PLATE.asItem(),
+                CROWN_ZOMBIBARK_BUTTON.asItem(),
+                CROWN_ZOMBIBARK_SIGN_ITEM,
+                CROWN_ZOMBIBARK_HANGING_SIGN_ITEM
             );
 
             for (Block bench : BENCHES.values()) {
                 entries.accept(bench.asItem());
             }
+
             for (Block picnicTable : PICNIC_TABLES.values()) {
                 entries.accept(picnicTable.asItem());
-}
+            }
         });
-    }
+}
 }

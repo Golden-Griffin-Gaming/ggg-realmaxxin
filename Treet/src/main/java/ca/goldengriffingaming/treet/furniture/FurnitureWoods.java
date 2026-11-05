@@ -46,6 +46,12 @@ public final class FurnitureWoods {
     public static final FurnitureWood GREY_ARCANUM =
         external("biomesoplenty", "magic", "Grey Arcanum");
 
+    public static final FurnitureWood GOLDEN_ETHEREAL =
+        external("biomesoplenty", "empyreal", "Golden Ethereal");
+
+    public static final FurnitureWood CROWN_ZOMBIBARK =
+        treet("crown_zombibark", "Crown Zombibark");
+
 
     public static final FurnitureWood OAK =
         vanilla("oak", "Oak");
@@ -142,6 +148,8 @@ private static FurnitureWood external(
         PALM,
         HELLBLADE,
         GREY_ARCANUM,
+        GOLDEN_ETHEREAL,
+        CROWN_ZOMBIBARK,
 
 //--- VANILLA ---//
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/dirt_path",
+  "textures": {
+    "top": "ggg-dirtydeeds:block/gravel_path_dry",
+    "side": "ggg-dirtydeeds:block/gravel_path_side_dry"
+  }
+}
